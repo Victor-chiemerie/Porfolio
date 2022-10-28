@@ -34,8 +34,6 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Authors**
-
 - GitHub: [@githubhandle](https://github.com/Victor-chiemerie)
 - Twitter: [@twitterhandle](https://twitter.com/VictorChiemer20)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/victor-chiemerie-460475246/)

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.welcome_page {
+    background-color: #1C1A19;
+    align-content: flex-start;
+    padding-left: 24px;
+    min-height: calc(100vh - 7.5vh);
+    background-image: url(images/welcome_image.png);
+    background-repeat: no-repeat;
+    background-size: 40% 60%;
+    background-position: right bottom;
+}
+
+.welcome_message h1{
+    padding-top: 60%;
+    display: flex;
+    flex: none;
+    flex-grow: 0;
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #FF6B00;
+    order: 0;
+}
+
+.welcome_message h2{
+    padding-top: 15x;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    flex: none;
+    flex-grow: 0;
+    align-items: center;
+    color: #FFF5E1;
+    order: 1;
+}
+
+h3 {
+    display: flex;
+    flex: none;
+    flex-grow: 0;
+    padding-top: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    order: 2;
+}
+
+.social_media {
+    display: flex;
+    align-items: baseline;
+    padding-top: 20px;
+    padding-left: 15px;
+    gap: 15px;
+    width: 50%;
+    height: 50%;
+}
+
+.social_media ul li {
+    width: 50%;
+    height: 50%;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+    background: #3C3A39;
+}
+
+.name {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 24px;
+    padding-top: 56px;
+}
+
+.button {
+    width: 30px;
+    height: 1px;
+    left: 0px;
+    top: 0px;
+    padding-top: 55px;
+    padding-right: 40px;
+}

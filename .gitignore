@@ -1,0 +1,11 @@
+# .gitignore
+node_modules/
+angel list.png
+github.png
+linkedin.png
+twitter.png
+medium.png
+union.png
+welcome_image.png
+index.html
+style.css

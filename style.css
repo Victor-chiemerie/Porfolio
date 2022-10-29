@@ -1,100 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.headder {
+  background: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 40px;
+  width: 15px;
+  height: 15px;
+}
+
+.name {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  align-items: center;
+  padding: 20px;
+}
+
 .welcome_page {
-  background-color: #1C1A19;
-  align-content: flex-start;
+  background: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding-left: 24px;
-  min-height: calc(100vh - 7.5vh);
+  padding-top: 120px;
+  min-height: 600px;
   background-image: url(images/welcome_image.png);
   background-repeat: no-repeat;
-  background-size: 40% 60%;
   background-position: right bottom;
+  background-size: 200px;
 }
-.welcome_message h1{
-  padding-top: 60%;
-  display: flex;
-  flex: none;
-  flex-grow: 0;
+
+.welcome_page div h1 {
   font-family: 'Crete Round';
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
-  line-height: 64px;
-  letter-spacing: 0.37px;
-  color: #FF6B00;
-  order: 0;
+  color: #ff6b00;
+  padding-top: 10px;
 }
-.welcome_message h2{
-  padding-top: 15x;
+
+.welcome_page div h2 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 32px;
-  display: flex;
-  flex: none;
-  flex-grow: 0;
-  align-items: center;
-  color: #FFF5E1;
-  order: 1;
+  color: #fff5e1;
+  padding-top: 10px;
 }
-h3 {
-  display: flex;
-  flex: none;
-  flex-grow: 0;
-  padding-top: 15px;
+
+.welcome_page div h3 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  color: #FFFFFF;
-  order: 2;
+  color: #fff;
+  padding-top: 10px;
 }
-.social_media {
+
+.welcome_page ul {
+  padding-top: 40px;
+  padding-left: 50px;
   display: flex;
-  align-items: baseline;
-  padding-top: 20px;
-  padding-left: 15px;
-  gap: 15px;
-  width: 50%;
-  height: 50%;
+  height: 22px;
+  justify-content: right;
+  column-gap: 20px;
+  align-content: space-between;
 }
-.social_media ul li {
-  width: 50%;
-  height: 50%;
-}
-.navbar {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 91px;
-  left: 0px;
-  top: 0px;
-  background: #3C3A39;
-}
-.name {
-  color: #FFFFFF;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-left: 24px;
-  padding-top: 56px;
-}
-.button {
-  width: 30px;
-  height: 1px;
-  left: 0px;
-  top: 0px;
-  padding-top: 55px;
-  padding-right: 40px;
-}
+
+
+

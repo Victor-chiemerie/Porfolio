@@ -13,6 +13,7 @@ img {
 .headder {
   background: #3c3a39;
   display: flex;
+  height: 70px;
   justify-content: space-between;
   align-items: center;
 }
@@ -28,6 +29,7 @@ img {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
+  text-decoration: none;
   font-size: 18px;
   align-items: center;
   padding: 20px;
@@ -65,7 +67,7 @@ img {
   padding-top: 10px;
 }
 
-.welcome_page div h3 {
+.welcome_page div p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -75,11 +77,10 @@ img {
 }
 
 .welcome_page ul {
-  padding-top: 40px;
-  padding-left: 50px;
+  padding-top: 22px;
+  padding-left: 8px;
   display: flex;
   height: 22px;
-  justify-content: right;
   column-gap: 20px;
   align-content: space-between;
 }

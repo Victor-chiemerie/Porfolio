@@ -57,7 +57,7 @@ img {
 }
 
 .welcome_page div h2 {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -83,6 +83,3 @@ img {
   column-gap: 20px;
   align-content: space-between;
 }
-
-
-

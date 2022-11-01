@@ -49,7 +49,7 @@ img {
   background-size: 200px;
 }
 
-.about-me h1 {
+.about-me h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -127,15 +127,16 @@ img {
 }
 
 .work-pages {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  align-items: center;
   margin-left: 24px;
   margin-right: 24px;
   gap: 15px;
 }
 
-.work-pages nav {
+.work-pages main {
   margin-bottom: 24px;
   display: flex;
   flex-direction: column;
@@ -145,7 +146,7 @@ img {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 52px;
   color: #1c1a19;
   display: flex;
@@ -154,13 +155,15 @@ img {
 }
 
 .line {
-  background-color: #212121;
+  height: 0;
+  width: 427px;
   display: flex;
   margin-top: 50px;
   margin-bottom: 100px;
+  border: 0.02px solid #212121;
 }
 
-.work-pages nav div h3 {
+.work-pages main div h3 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -172,7 +175,7 @@ img {
   padding-top: 20px;
 }
 
-.work-pages nav div p {
+.work-pages main div p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -183,6 +186,7 @@ img {
 }
 
 .list-tag {
+  list-style-type: none;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 20px;
@@ -215,6 +219,22 @@ img {
   color: #fff;
   letter-spacing: 0.03em;
   border-width: 0;
+}
+
+.buttons:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.buttons:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+.buttons:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .first-page button {
@@ -263,21 +283,21 @@ img {
   width: 432px;
 }
 
-.technologies nav {
+.technologies .tech {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
 }
 
-.technologies nav div {
+.technologies .tech div {
   display: flex;
   justify-content: center;
   align-items: baseline;
   gap: 15px;
 }
 
-.technologies nav div p {
+.technologies .tech div p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -286,7 +306,7 @@ img {
   color: #fff;
 }
 
-.technologies nav div img {
+.technologies .tech div img {
   width: 23px;
   height: 23px;
 }

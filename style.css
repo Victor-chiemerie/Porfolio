@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=InaiMathi&family=Poppins&family=Roboto&family=Inter&display=swap');
 
 * {
   margin: 0;
@@ -49,6 +49,15 @@ img {
   background-size: 200px;
 }
 
+.about-me h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  color: #ff6b00;
+  padding-top: 20px;
+}
+
 .welcome_page div h1 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -58,6 +67,17 @@ img {
   padding-top: 10px;
 }
 
+.profession h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 170px;
+}
+
 .welcome_page div h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -65,6 +85,27 @@ img {
   font-size: 24px;
   color: #fff5e1;
   padding-top: 10px;
+}
+
+.profession p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.about-me p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .welcome_page div p {
@@ -83,4 +124,222 @@ img {
   height: 22px;
   column-gap: 20px;
   align-content: space-between;
+}
+
+.work-pages {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  gap: 15px;
+}
+
+.work-pages main {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 52px;
+  color: #1c1a19;
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.line {
+  height: 0;
+  width: 427px;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border: 0.02px solid #212121;
+}
+
+.work-pages .picture {
+  background-image: url(images/Img\ Placeholder.png);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: 27.5rem;
+  width: 30rem;
+  height: 20rem;
+}
+
+.work-pages main div h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #091e42;
+  padding-top: 20px;
+}
+
+.work-pages main div p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  padding-top: 7px;
+}
+
+.list-tag {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  grid-row: 1;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.tags {
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #091e42;
+  text-align: center;
+  padding: 10px 12px;
+}
+
+.buttons {
+  background: #ff6b00;
+  padding: 12px;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0.03em;
+  border-width: 0;
+}
+
+.buttons:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.buttons:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+.buttons:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+.first-page {
+  width: 95%;
+}
+
+.first-page button {
+  width: 170px;
+}
+
+.other-pages {
+  list-style-type: none;
+}
+
+.profession {
+  list-style-type: none;
+  background-image: url(images/work\ background.png);
+  width: 96%;
+}
+
+.profession .list-tag {
+  margin-left: 24px;
+}
+
+.profession .tags {
+  color: #fff;
+}
+
+.profession button {
+  width: 435px;
+}
+
+.about-me {
+  background-color: #1c1a19;
+  padding-left: 24px;
+  padding-top: 120px;
+  min-height: 520px;
+  background-image: url(images/background\ image\ 2.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 180px;
+  margin-top: 150px;
+}
+
+.technologies {
+  background-color: #1c1a19;
+  padding-left: 24px;
+}
+
+.technologies .line2 {
+  width: 432px;
+}
+
+.technologies .tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.technologies .tech div {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.technologies .tech div p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.technologies .tech div img {
+  width: 23px;
+  height: 23px;
+}
+
+.technologies ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.technologies ul li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }

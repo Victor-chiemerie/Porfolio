@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -106,6 +110,19 @@ img {
   color: #fff;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+.contact-page p {
+  padding-top: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 720;
+  font-size: 35px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
 }
 
 .welcome_page div p {
@@ -304,6 +321,13 @@ img {
   padding-top: 120px;
 }
 
+.links div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
 .technologies .tech div {
   display: flex;
   justify-content: center;
@@ -331,6 +355,10 @@ img {
   padding-bottom: 20px;
 }
 
+.contact-page li {
+  list-style-type: none;
+}
+
 .technologies ul li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -342,4 +370,59 @@ img {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12rem;
+}
+
+.contact-page form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.contact-page form ul li {
+  align-self: flex-start;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.contact-page form li input,
+textarea {
+  margin-bottom: 20px;
+  width: 430px;
+  border: none;
+  padding-left: 10px;
+}
+
+.contact-page form li input {
+  height: 40px;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.contact-page form textarea {
+  background-color: #fbf8f7;
+  height: 8rem;
+  padding-top: 14px;
+}
+
+.social_media {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  padding-left: 8px;
+  padding-bottom: 35px;
+  height: 22px;
+  column-gap: 20px;
+  border-top: 1px solid #dfe1e6;
+}
+
+.lastline {
+  width: 10rem;
 }

@@ -18,14 +18,17 @@ img {
   background: #3c3a39;
   display: flex;
   height: 70px;
-  justify-content: space-between;
+  width: 100%;
+  gap: 62%;
   align-items: center;
 }
 
+.menu-bar {
+  display: none;
+}
+
 .icon {
-  margin-right: 40px;
-  width: 15px;
-  height: 15px;
+  width: 80%;
 }
 
 .name {
@@ -33,10 +36,10 @@ img {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
+  width: fit-content;
   text-decoration: none;
   font-size: 18px;
-  align-items: center;
-  padding: 20px;
+  margin-left: 5%;
 }
 
 .welcome_page {
@@ -44,54 +47,166 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 24px;
-  padding-top: 120px;
-  min-height: 600px;
+  width: 100%;
   background-image: url(images/welcome_image.png);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 200px;
+  background-size: 40%;
 }
 
-.about-me h2 {
+.beginning-page {
+  margin: 6%;
+  margin-top: 25%;
+  margin-bottom: 20%;
+}
+
+.welcome_message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.greeting {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
+  line-height: 65px;
   color: #ff6b00;
-  padding-top: 20px;
 }
 
-.welcome_page div h1 {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
-  color: #ff6b00;
-  padding-top: 10px;
-}
-
-.profession h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 60px;
-  color: #fff;
-  padding-left: 24px;
-  padding-top: 170px;
-}
-
-.welcome_page div h2 {
+.work {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   color: #fff5e1;
-  padding-top: 10px;
 }
 
-.profession p {
+.service {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.welcome_page ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  height: 22px;
+}
+
+.work-pages {
+  display: grid;
+  width: 90%;
+  margin: 5%;
+  margin-top: 30%;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  align-items: center;
+}
+
+.first-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.line {
+  height: 0;
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border: 0.02px solid #212121;
+}
+
+.work-pages .picture {
+  background-image: url(images/Img\ Placeholder.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20rem;
+}
+
+.profession2 h3 {
+  display: none;
+}
+
+.profession3 h3 {
+  display: none;
+}
+
+.work-pages main div h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #091e42;
+  padding-top: 20px;
+}
+
+.profession2 p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.profession1 p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.profession3 p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.profession4 p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.profession5 p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.profession6 p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -108,14 +223,12 @@ img {
   font-weight: 400;
   font-size: 16px;
   color: #fff;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-left: 5%;
+  margin-bottom: 10%;
 }
 
 .contact-page p {
-  padding-top: 120px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 30%;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 720;
@@ -123,82 +236,6 @@ img {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-}
-
-.welcome_page div p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #fff;
-  padding-top: 10px;
-}
-
-.welcome_page ul {
-  padding-top: 22px;
-  padding-left: 8px;
-  display: flex;
-  height: 22px;
-  column-gap: 20px;
-  align-content: space-between;
-}
-
-.work-pages {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto auto;
-  align-items: center;
-  margin-left: 24px;
-  margin-right: 24px;
-  gap: 15px;
-}
-
-.work-pages main {
-  margin-bottom: 24px;
-  display: flex;
-  flex-direction: column;
-}
-
-.title {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 52px;
-  color: #1c1a19;
-  display: flex;
-  align-items: center;
-  padding-top: 120px;
-}
-
-.line {
-  height: 0;
-  width: 427px;
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  border: 0.02px solid #212121;
-}
-
-.work-pages .picture {
-  background-image: url(images/Img\ Placeholder.png);
-  background-repeat: no-repeat;
-  object-fit: contain;
-  background-size: 27.5rem;
-  width: 30rem;
-  height: 20rem;
-}
-
-.work-pages main div h3 {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  display: flex;
-  align-items: center;
-  color: #091e42;
-  padding-top: 20px;
 }
 
 .work-pages main div p {
@@ -211,6 +248,23 @@ img {
   padding-top: 7px;
 }
 
+.profession1 {
+  list-style-type: none;
+  background-image: url(images/work\ background.png);
+  width: 100%;
+}
+
+.profession1 h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 170px;
+}
+
 .list-tag {
   list-style-type: none;
   display: grid;
@@ -219,6 +273,10 @@ img {
   grid-row: 1;
   padding-top: 20px;
   padding-bottom: 15px;
+}
+
+.profession1 .list-tag {
+  margin-left: 24px;
 }
 
 .tags {
@@ -231,6 +289,286 @@ img {
   color: #091e42;
   text-align: center;
   padding: 10px 12px;
+}
+
+.profession1 .tags {
+  color: #fff;
+}
+
+.profession1 button {
+  width: 100%;
+}
+
+.profession2 {
+  list-style-type: none;
+  background-image: url(images/work\ background.png);
+  width: 100%;
+}
+
+.profession2 h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 170px;
+}
+
+.profession2 .list-tag {
+  margin-left: 24px;
+}
+
+.profession2 .tags {
+  color: #fff;
+}
+
+.profession2 button {
+  width: 100%;
+}
+
+.profession3 {
+  list-style-type: none;
+  background-image: url(images/work\ background.png);
+  width: 100%;
+}
+
+.profession3 h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 170px;
+}
+
+.profession3 .list-tag {
+  margin-left: 24px;
+}
+
+.profession3 .tags {
+  color: #fff;
+}
+
+.profession3 button {
+  width: 100%;
+}
+
+.profession4 {
+  list-style-type: none;
+  background-image: url(images/work\ background.png);
+  width: 100%;
+}
+
+.profession4 h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 170px;
+}
+
+.profession4 .list-tag {
+  margin-left: 24px;
+}
+
+.profession4 .tags {
+  color: #fff;
+}
+
+.profession4 button {
+  width: 100%;
+}
+
+.profession5 {
+  list-style-type: none;
+  background-image: url(images/work\ background.png);
+  width: 100%;
+}
+
+.profession5 h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 170px;
+}
+
+.profession5 .list-tag {
+  margin-left: 24px;
+}
+
+.profession5 .tags {
+  color: #fff;
+}
+
+.profession5 button {
+  width: 100%;
+}
+
+.profession6 {
+  list-style-type: none;
+  background-image: url(images/work\ background.png);
+  width: 100%;
+}
+
+.profession6 h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 170px;
+}
+
+.profession6 .list-tag {
+  margin-left: 24px;
+}
+
+.profession6 .tags {
+  color: #fff;
+}
+
+.profession6 button {
+  width: 100%;
+}
+
+.about-me {
+  background-color: #1c1a19;
+  background-image: url(images/background\ image\ 2.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 40%;
+  margin-top: 40%;
+}
+
+.about-me h2 {
+  width: 90%;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  color: #ff6b00;
+  margin: 5%;
+  padding-top: 35%;
+}
+
+.about-me button {
+  margin-left: 5%;
+  margin-bottom: 45%;
+}
+
+.technologies {
+  background-color: #1c1a19;
+  padding: 5%;
+  padding-bottom: 30%;
+}
+
+.technologies .line2 {
+  width: 432px;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40%;
+}
+
+.tech1 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.technologies .tech div p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.technologies .tech div img {
+  width: 23px;
+  height: 23px;
+}
+
+.language-sect ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.frameworks-sect ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.frameworks {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.skills-sect ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.contact-page li {
+  list-style-type: none;
+}
+
+.technologies ul li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.title {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 52px;
+  color: #1c1a19;
+  display: flex;
+  align-items: center;
 }
 
 .buttons {
@@ -263,10 +601,6 @@ img {
   color: #5b5957;
 }
 
-.first-page {
-  width: 95%;
-}
-
 .first-page button {
   width: 170px;
 }
@@ -275,129 +609,35 @@ img {
   list-style-type: none;
 }
 
-.profession {
-  list-style-type: none;
-  background-image: url(images/work\ background.png);
-  width: 96%;
-}
-
-.profession .list-tag {
-  margin-left: 24px;
-}
-
-.profession .tags {
-  color: #fff;
-}
-
-.profession button {
-  width: 435px;
-}
-
-.about-me {
-  background-color: #1c1a19;
-  padding-left: 24px;
-  padding-top: 120px;
-  min-height: 520px;
-  background-image: url(images/background\ image\ 2.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 180px;
-  margin-top: 150px;
-}
-
-.technologies {
-  background-color: #1c1a19;
-  padding-left: 24px;
-}
-
-.technologies .line2 {
-  width: 432px;
-}
-
-.technologies .tech {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 120px;
-}
-
-.links div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 5px;
-}
-
-.technologies .tech div {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 15px;
-}
-
-.technologies .tech div p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-}
-
-.technologies .tech div img {
-  width: 23px;
-  height: 23px;
-}
-
-.technologies ul {
-  list-style-type: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.contact-page li {
-  list-style-type: none;
-}
-
-.technologies ul li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-}
-
 .contact-page {
+  margin: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 12rem;
+  padding-bottom: 40%;
+}
+
+.contact-page form {
+  width: 100%;
+  margin-top: 20%;
 }
 
 .contact-page form ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  width: 100%;
 }
 
 .contact-page form ul li {
-  align-self: flex-start;
-  margin-left: 24px;
-  margin-right: 24px;
+  width: 100%;
 }
 
 .contact-page form li input,
 textarea {
-  margin-bottom: 20px;
-  width: 430px;
+  margin-bottom: 7%;
   border: none;
-  padding-left: 10px;
+  width: 100%;
 }
 
 .contact-page form li input {
@@ -420,9 +660,526 @@ textarea {
   padding-bottom: 35px;
   height: 22px;
   column-gap: 20px;
+}
+
+.bottom-social_media {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  padding-left: 8px;
+  padding-bottom: 35px;
+  height: 22px;
+  column-gap: 20px;
   border-top: 1px solid #dfe1e6;
 }
 
 .lastline {
   width: 10rem;
+}
+
+.links div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 786px) {
+  .headder {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0%;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .menu-bar {
+    display: flex;
+    width: 20%;
+    padding: 0%;
+    gap: 11px;
+    align-items: center;
+    margin-right: 7%;
+  }
+
+  .Message-icon {
+    justify-self: center;
+    width: 10%;
+    height: 10%;
+  }
+
+  .welcome_page {
+    background-image: url(images/Desktop\ Background.png);
+    padding: 0%;
+  }
+
+  .beginning-page {
+    margin-top: 15%;
+    margin-bottom: 13%;
+    display: flex;
+    margin-left: 2px;
+  }
+
+  .welcome_message {
+    width: 40%;
+    order: 1;
+  }
+
+  .welcome_page ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 6rem;
+  }
+
+  .welcome_page ul li {
+    width: 16px;
+    height: 18px;
+    padding-right: 4rem;
+  }
+
+  .work-item1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4%;
+    margin-bottom: 4%;
+  }
+
+  .line {
+    background-color: #212121;
+    width: 70%;
+    margin: 0;
+    height: 0.1px;
+    border: none;
+  }
+
+  .work-item2 {
+    display: flex;
+    gap: 2%;
+    justify-content: flex-end;
+  }
+
+  .work-pages .picture {
+    width: 48%;
+  }
+
+  .multi-stories {
+    width: 100%;
+  }
+
+  .work-pages {
+    margin: 5%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+  }
+
+  .first-page {
+    width: fit-content;
+    grid-column: 1 / 4;
+  }
+
+  .profession1 {
+    position: relative;
+    list-style-type: none;
+    background-image: url(images/profession1\ background.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  .profession1 p {
+    display: none;
+  }
+
+  .profession1 h2 {
+    display: none;
+  }
+
+  .profession1 .list-tag {
+    display: none;
+  }
+
+  .profession1 .tags {
+    display: none;
+  }
+
+  .profession1 button {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession2 {
+    list-style-type: none;
+    background-image: url(images/profession2\ background.png);
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+  }
+
+  .profession2 h2 {
+    display: none;
+  }
+
+  .profession2 h3 {
+    margin-top: 40%;
+    display: flex;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    color: #fff;
+    padding-left: 24px;
+  }
+
+  .profession2 p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 24px;
+  }
+
+  .profession2 button {
+    display: none;
+  }
+
+  .profession3 {
+    list-style-type: none;
+    background-image: url(images/profession3\ background.png);
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2%;
+  }
+
+  .profession3 h2 {
+    display: none;
+  }
+
+  .profession3 h3 {
+    display: flex;
+    margin-top: 53%;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    color: #fff;
+    padding-left: 24px;
+  }
+
+  .profession3 p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 24px;
+  }
+
+  .profession3 button {
+    display: none;
+  }
+
+  .profession4 {
+    list-style-type: none;
+    background-image: url(images/work\ background.png);
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2%;
+  }
+
+  .profession4 h2 {
+    margin-top: 9%;
+  }
+
+  .profession4 p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 24px;
+  }
+
+  .profession4 button {
+    display: none;
+  }
+
+  .profession5 {
+    list-style-type: none;
+    background-image: url(images/profession2\ background.png);
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+  }
+
+  .profession5 h2 {
+    display: none;
+  }
+
+  .profession5 h3 {
+    margin-top: 40%;
+    display: flex;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    color: #fff;
+    padding-left: 24px;
+  }
+
+  .profession5 p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 24px;
+  }
+
+  .profession5 button {
+    display: none;
+  }
+
+  .profession6 {
+    list-style-type: none;
+    background-image: url(images/profession3\ background.png);
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2%;
+  }
+
+  .profession6 h2 {
+    display: none;
+  }
+
+  .profession6 h3 {
+    display: flex;
+    margin-top: 53%;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    color: #fff;
+    padding-left: 24px;
+  }
+
+  .profession6 p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 24px;
+  }
+
+  .profession6 button {
+    display: none;
+  }
+
+  .about-me {
+    min-height: fit-content;
+    margin: 0;
+    padding: 0;
+    padding: 5%;
+    background-image: url(images/about-me\ desktop\ background.png);
+    background-position: right;
+    background-size: 40%;
+  }
+
+  .about-me h2 {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    margin-top: 3%;
+  }
+
+  .about-me p {
+    margin: 0%;
+    margin-bottom: 2%;
+    width: 40%;
+  }
+
+  .about-me .button {
+    width: 10%;
+  }
+
+  .about-me button {
+    margin: 0%;
+    margin-bottom: 5%;
+  }
+
+  .technologies {
+    margin: 0;
+    padding: 0;
+    padding: 5%;
+    padding-top: 3%;
+  }
+
+  .technologies .line2 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .tech {
+    margin: 0%;
+    padding: 0%;
+    margin-top: 9%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+  }
+
+  .tech1 {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .language-sect {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .language {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .language-sect ul li {
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 3%;
+    align-items: flex-start;
+  }
+
+  .tech2 {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .frameworks-sect {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .frameworks {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .frameworks-sect ul li {
+    margin: 0%;
+    padding: 0%;
+    align-items: flex-start;
+    padding-bottom: 3%;
+  }
+
+  .tech3 {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .skills-sect {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .skills {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .skills-sect ul li {
+    margin: 0%;
+    padding: 0%;
+    align-items: flex-start;
+    padding-bottom: 3%;
+  }
+
+  .contact-page {
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    margin: 8%;
+    gap: 2%;
+  }
+
+  .contact-page p {
+    display: flex;
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
+    text-align: start;
+    padding-bottom: 13%;
+  }
+
+  .contact-page form {
+    margin: 0%;
+  }
+
+  .contact-page form ul {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .contact-page form ul li {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+  }
+
+  .contact-page form li input,
+  textarea {
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+  .links div {
+    display: none;
+  }
 }

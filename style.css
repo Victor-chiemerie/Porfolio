@@ -759,13 +759,18 @@ textarea {
   }
 
   .work-item2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2%;
-    justify-content: flex-end;
   }
 
   .work-pages .picture {
-    width: 48%;
+    max-width: 100%;
+    min-height: 100%;
+    background-image: url(images/Img\ Placeholder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .multi-stories {
@@ -820,9 +825,11 @@ textarea {
     background-size: cover;
     height: 100%;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
+  }
+
+  .workings2 {
+    margin: 6%;
+    margin-top: 40%;
   }
 
   .profession2 h2 {
@@ -830,7 +837,8 @@ textarea {
   }
 
   .profession2 h3 {
-    margin-top: 40%;
+    margin: 0%;
+    padding: 0%;
     display: flex;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -838,17 +846,23 @@ textarea {
     font-size: 45px;
     line-height: 60px;
     color: #fff;
-    padding-left: 24px;
   }
 
   .profession2 p {
+    margin: 0%;
+    padding: 0%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: #fff;
-    padding-left: 24px;
+  }
+
+  .profession2 .list-tag {
+    margin: 0%;
+    padding: 0%;
+    padding-top: 5%;
   }
 
   .profession2 button {
@@ -860,10 +874,11 @@ textarea {
     background-image: url(images/profession3\ background.png);
     background-size: cover;
     height: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    gap: 2%;
+  }
+
+  .workings3 {
+    margin: 6%;
+    margin-top: 40%;
   }
 
   .profession3 h2 {
@@ -871,29 +886,36 @@ textarea {
   }
 
   .profession3 h3 {
+    margin: 0%;
+    padding: 0%;
     display: flex;
-    margin-top: 53%;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 45px;
     line-height: 60px;
     color: #fff;
-    padding-left: 24px;
   }
 
   .profession3 p {
+    margin: 0%;
+    padding: 0%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: #fff;
-    padding-left: 24px;
   }
 
   .profession3 button {
     display: none;
+  }
+
+  .profession3 .list-tag {
+    margin: 0%;
+    padding: 0%;
+    padding-top: 5%;
   }
 
   .profession4 {
@@ -901,24 +923,34 @@ textarea {
     background-image: url(images/work\ background.png);
     background-size: cover;
     height: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    gap: 2%;
+  }
+
+  .workings4 {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 40%;
   }
 
   .profession4 h2 {
-    margin-top: 9%;
+    margin: 0%;
+    padding: 0%;
   }
 
   .profession4 p {
+    margin: 0%;
+    padding: 0%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: #fff;
-    padding-left: 24px;
+  }
+
+  .profession4 .list-tag {
+    margin: 0%;
+    padding: 0%;
+    padding-top: 5%;
   }
 
   .profession4 button {
@@ -931,9 +963,11 @@ textarea {
     background-size: cover;
     height: 100%;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
+  }
+
+  .workings5 {
+    margin: 6%;
+    margin-top: 40%;
   }
 
   .profession5 h2 {
@@ -941,7 +975,8 @@ textarea {
   }
 
   .profession5 h3 {
-    margin-top: 40%;
+    margin: 0%;
+    padding: 0%;
     display: flex;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -949,17 +984,23 @@ textarea {
     font-size: 45px;
     line-height: 60px;
     color: #fff;
-    padding-left: 24px;
   }
 
   .profession5 p {
+    margin: 0%;
+    padding: 0%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: #fff;
-    padding-left: 24px;
+  }
+
+  .profession5 .list-tag {
+    margin: 0%;
+    padding: 0%;
+    padding-top: 5%;
   }
 
   .profession5 button {
@@ -971,10 +1012,11 @@ textarea {
     background-image: url(images/profession3\ background.png);
     background-size: cover;
     height: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    gap: 2%;
+  }
+
+  .workings6 {
+    margin: 6%;
+    margin-top: 40%;
   }
 
   .profession6 h2 {
@@ -982,29 +1024,36 @@ textarea {
   }
 
   .profession6 h3 {
+    margin: 0%;
+    padding: 0%;
     display: flex;
-    margin-top: 53%;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 45px;
     line-height: 60px;
     color: #fff;
-    padding-left: 24px;
   }
 
   .profession6 p {
+    margin: 0%;
+    padding: 0%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: #fff;
-    padding-left: 24px;
   }
 
   .profession6 button {
     display: none;
+  }
+
+  .profession6 .list-tag {
+    margin: 0%;
+    padding: 0%;
+    padding-top: 5%;
   }
 
   .about-me {

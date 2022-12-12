@@ -162,11 +162,6 @@ img {
   padding-top: 24px;
 }
 
-.profession3:hover, .profession2:hover, .profession1:hover, .profession4:hover, .profession5:hover, .profession6:hover {
-  width: 80%;
-  height: 80%;
-}
-
 .profession1 p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -340,7 +335,6 @@ img {
   background-image: url(images/work\ background.png);
   width: 100%;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
-
 }
 
 .profession3 h2 {
@@ -454,6 +448,16 @@ img {
 
 .profession6 button {
   width: 100%;
+}
+
+.profession3:hover,
+.profession2:hover,
+.profession1:hover,
+.profession4:hover,
+.profession5:hover,
+.profession6:hover {
+  width: 80%;
+  height: 80%;
 }
 
 .about-me {

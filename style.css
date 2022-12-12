@@ -162,6 +162,11 @@ img {
   padding-top: 24px;
 }
 
+.profession3:hover, .profession2:hover, .profession1:hover, .profession4:hover, .profession5:hover, .profession6:hover {
+  width: 80%;
+  height: 80%;
+}
+
 .profession1 p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -252,6 +257,7 @@ img {
   list-style-type: none;
   background-image: url(images/work\ background.png);
   width: 100%;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .profession1 h2 {
@@ -303,6 +309,7 @@ img {
   list-style-type: none;
   background-image: url(images/work\ background.png);
   width: 100%;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .profession2 h2 {
@@ -332,6 +339,8 @@ img {
   list-style-type: none;
   background-image: url(images/work\ background.png);
   width: 100%;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
 }
 
 .profession3 h2 {
@@ -361,6 +370,7 @@ img {
   list-style-type: none;
   background-image: url(images/work\ background.png);
   width: 100%;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .profession4 h2 {
@@ -390,6 +400,7 @@ img {
   list-style-type: none;
   background-image: url(images/work\ background.png);
   width: 100%;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .profession5 h2 {
@@ -419,6 +430,7 @@ img {
   list-style-type: none;
   background-image: url(images/work\ background.png);
   width: 100%;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .profession6 h2 {
@@ -878,7 +890,7 @@ textarea {
 
   .workings3 {
     margin: 6%;
-    margin-top: 40%;
+    margin-top: 51%;
   }
 
   .profession3 h2 {

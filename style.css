@@ -427,6 +427,16 @@ img {
   transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
+.profession3:hover,
+.profession2:hover,
+.profession1:hover,
+.profession4:hover,
+.profession5:hover,
+.profession6:hover {
+  width: 80%;
+  height: 80%;
+}
+
 .profession6 h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -448,16 +458,6 @@ img {
 
 .profession6 button {
   width: 100%;
-}
-
-.profession3:hover,
-.profession2:hover,
-.profession1:hover,
-.profession4:hover,
-.profession5:hover,
-.profession6:hover {
-  width: 80%;
-  height: 80%;
 }
 
 .about-me {
@@ -730,6 +730,18 @@ textarea {
   .welcome_page {
     background-image: url(images/Desktop\ Background.png);
     padding: 0%;
+  }
+
+  .greeting {
+    font-size: 64px;
+  }
+  
+  .work {
+    font-size: 30px;
+  }
+  
+  .service {
+    font-size: 22px;
   }
 
   .beginning-page {
@@ -1087,12 +1099,14 @@ textarea {
     padding: 0;
     width: 50%;
     margin-top: 3%;
+    font-size: 62px;
   }
 
   .about-me p {
     margin: 0%;
     margin-bottom: 2%;
     width: 40%;
+    font-size: 22px;
   }
 
   .about-me .button {

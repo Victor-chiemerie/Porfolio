@@ -60,9 +60,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project">Desktop-view Setup</a>
+# 📖 My First Portfolio
 
-> Describe your project in 1 or 2 sentences.
+> [Describe your project in 1 or 2 sentences.](https://www.loom.com/share/5fc1e6594f4742ed97025fb075402e46)
 
 **[Desktop-view Setup]** This project teaches one how to be able to make responsive websites that will be able to be used across all screen platforms
 

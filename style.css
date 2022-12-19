@@ -731,7 +731,7 @@ textarea {
   background: #3c3a39;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   width: 100%;
-  height: calc(100% - 100px);
+  height: calc(100% - 22%);
 }
 
 .mobile-menu__close {
@@ -750,6 +750,13 @@ textarea {
   text-decoration: none;
   cursor: pointer;
   user-select: none;
+}
+
+.lastline2 {
+  width: 10rem;
+  left: calc(50% - 134px / 2 - 0.5px);
+  position: absolute;
+  top: calc(87.5vh);
 }
 
 .hidden {

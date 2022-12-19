@@ -524,6 +524,12 @@ img {
   color: #fff;
 }
 
+.mobile-menu__close img {
+  width: 17px;
+  cursor: pointer;
+  user-select: none;
+}
+
 .technologies .tech div img {
   width: 23px;
   height: 23px;
@@ -561,6 +567,13 @@ img {
 
 .contact-page li {
   list-style-type: none;
+}
+
+.mobile-menu li {
+  margin: 6%;
+  padding: 10px;
+  list-style-type: none;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 .technologies ul li {
@@ -638,6 +651,10 @@ img {
   margin-top: 20%;
 }
 
+.mobile-menu-container ul {
+  margin: 2%;
+}
+
 .contact-page form ul {
   display: flex;
   flex-direction: column;
@@ -699,6 +716,51 @@ textarea {
   flex-direction: column;
   align-items: center;
   padding-bottom: 5px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.mobile-menu-container {
+  background: #3c3a39;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  width: 100%;
+  height: calc(100% - 22%);
+}
+
+.mobile-menu__close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5% 9%;
+}
+
+.mobile-menu a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lastline2 {
+  width: 10rem;
+  left: calc(50% - 134px / 2 - 0.5px);
+  position: absolute;
+  top: calc(87.5vh);
+}
+
+.hidden {
+  display: none;
 }
 
 @media only screen and (min-width: 786px) {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victors Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Tool box -->
@@ -13,10 +14,12 @@
         <div class="headder">
             <a class="name" href="#">Welcome</a>
             <nav>
+              <a id="hamburger">
                 <img class="icon" src="images/Union.png" alt="more-info">
+              </a>
             </nav>
             <menu class="menu-bar">
-              <a class="name" href="#">Portfolio</a>
+              <a class="name" href="#work-pages">Portfolio</a>
               <a class="name" href="#">About</a>
               <a class="name" href="#">Contact</a>
               <img class="Message-icon" src="images/Message icon.png" alt="Send-a-mail">
@@ -69,7 +72,7 @@
          </div>
     </section>
     <!-- work pages -->
-    <section class="work-pages">
+    <section class="work-pages" id="#work-pages">
       <main class="first-page">
         <div class="work-container">
           <div class="work-item1">
@@ -199,7 +202,7 @@
         </li>
     </section>
     <!-- about me page -->
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <h2>About me</h2>
         <p>
           Hello I’m a software developer! I can help you build a product , 
@@ -260,7 +263,7 @@
       </div>
     </section>
     <!-- contact page -->
-    <section class="contact-page">
+    <section class="contact-page" id="contact-page">
       <p>
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </p>
@@ -312,5 +315,19 @@
       <img class="lastline" src="images/last line.png" alt="Horizontal-slide">
     </div>
     </footer>
+    <!-- Mobile menu -->
+    <section class="mobile-menu hidden" id="mobile-menu">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu__close">
+          <img src="images/close-icon.png" id="close-img">
+        </div>
+        <ul>
+          <li><a href="#work-pages">Portfolio</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#contact-page">Contact</a></li>
+        </ul>
+        <img class="lastline2" src="images/last line.png" alt="Horizontal-slide">
+      </div>
+    </section>
 </body>
 </html>

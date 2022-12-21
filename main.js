@@ -154,9 +154,8 @@ mainWorkButton.addEventListener('click', () => {
     </div>
   </div>`;
 
-  const closeProjects = document.querySelector('#close-projects');
-  closeProjects.addEventListener('click', () => modalPage.classList.add('hide'));
-
+  const closeMainProjects = document.querySelector('#close-projects');
+  closeMainProjects.addEventListener('click', () => modalPage.classList.add('hide'));
 
   modalPage.classList.remove('hide');
 });
@@ -175,11 +174,45 @@ projects.forEach((project) => {
             <li class="tags">bootstrap</li>
             <li class="tags">ruby</li>
           </ul>
-      <button id="project-button.${project.id}" class="buttons">See Project</button>
+      <button id="project-button-${project.id}" class="buttons">See Project</button>
     </div>
   `;
 
   workPages.appendChild(list);
+
+  const professionBtn = document.querySelector(`#project-button-${project.id}`);
+  professionBtn.addEventListener('click', () => {
+
+    modalContent.innerHTML = `<div class="title-sect">
+    <h2>${project.name}</h2>
+    <h3>${project.name}</h3>
+    <img src="images/close-icon.png" id="close-projects">
+  </div>
+  <ul class="modal-list-tag">
+    <li class="modal-tags">html</li>
+    <li class="modal-tags">Bootstrap</li>
+    <li class="modal-tags">Ruby on rails</li>
+  </ul>
+  <div class="second-sect">
+    <div class="second-sect-img">
+      <img class="image" src="images/${project.featuredImage}" alt="Snapshoot image">
+    </div>
+    <div class="last-sect">
+      <p>${project.description}</p>
+      <div class="last-buttons">
+        <a href="https://victor-chiemerie.github.io/"><button class="buttons">See Live <img src="images/Live link.png" alt="live_link"></button></a>
+        <a href="https://github.com/Victor-chiemerie/Victor-chiemerie.github.io"><button class="buttons">See Source <img src="images/github.png" alt="github"></button></a>
+      </div>
+    </div>
+  </div>`;
+
+  const closeMainProjects = document.querySelector('#close-projects');
+  closeMainProjects.addEventListener('click', () => modalPage.classList.add('hide'));
+
+  modalPage.classList.remove('hide');
+  })
 });
+
+
 // projects[0]['id'] = 7;
 // console.log(projects[0]['id']);

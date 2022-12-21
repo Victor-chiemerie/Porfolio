@@ -763,6 +763,107 @@ textarea {
   display: none;
 }
 
+.modal-section {
+  position: fixed;
+  top: 0px;
+  background: rgba(151, 148, 147, 50%);
+  backdrop-filter: blur(3px);
+}
+
+.modal-contents {
+  margin: 3vh;
+  height: 94vh;
+  background-color: #FFFFFF;
+}
+
+.title-sect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 5%;
+}
+
+.title-sect h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.title-sect img {
+  width: 20px;
+  height: 20px;
+}
+
+.title-sect h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  display: none;
+}
+
+.modal-list-tag {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  padding: 7% 5% 0% 5%;
+  
+}
+
+.modal-tags {
+  border: 1px solid #8993a4;
+  text-align: center;
+  padding: 10px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3C3A39;
+}
+
+.second-sect {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.last-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.last-sect p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.last-buttons {
+  display: flex;
+  gap: 13px;
+}
+
+.last-buttons img {
+  width: 15px;
+}
+
+.hide {
+  display: none;
+}
+
 @media only screen and (min-width: 786px) {
   .headder {
     width: 100%;
@@ -1323,4 +1424,56 @@ textarea {
   .links div {
     display: none;
   }
+
+  .modal-contents {
+    margin: 14vh;
+    height: 72vh;
+    background-color: #FFFFFF;
+}
+
+.title-sect {
+  padding: 2% 2% 0% 2%;
+  width: 96%;
+  margin: 0px;
+}
+
+.title-sect h2 {
+  display: none;
+}
+
+.title-sect h3 {
+  display: flex;
+}
+
+.modal-list-tag {
+  width: 96%;
+  padding: 1% 2% 0% 2%;
+}
+
+.second-sect {
+  padding: 2% 2% 0% 2%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 18px;
+}
+
+.second-sect-img{
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 510px;
+}
+
+.last-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.last-buttons {
+  position: relative;
+}
 }

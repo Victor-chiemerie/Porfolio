@@ -206,3 +206,23 @@ projects.forEach((project) => {
     modalPage.classList.remove('hide');
   });
 });
+
+// Form Validation
+
+const form = document.querySelector('#form');
+const errorMessage = document.querySelector('#error-message');
+const userEmail = document.getElementById("user-email");
+
+
+form.addEventListener('submit', (event) => {
+
+  console.log(userEmail.value);
+
+if (userEmail.value !== userEmail.value.toLowerCase()) {
+  event.preventDefault();
+  errorMessage.innerHTML = 'Email field only can include lowercase characters.';
+  errorMessage.classList.remove('hidden');
+} else {
+  errorMessage.classList.add('hidden');
+}
+});

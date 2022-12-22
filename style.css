@@ -106,6 +106,7 @@ img {
   margin-top: 30%;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto;
+  gap: 20px;
   align-items: center;
 }
 
@@ -131,11 +132,18 @@ img {
   height: 20rem;
 }
 
-.profession2 h3 {
-  display: none;
+.title-sect img {
+  width: 20px;
+  height: 20px;
 }
 
-.profession3 h3 {
+.title-sect h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
   display: none;
 }
 
@@ -238,6 +246,15 @@ img {
   color: #172b4d;
 }
 
+.last-sect p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
 .work-pages main div p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -250,9 +267,10 @@ img {
 
 .profession1 {
   list-style-type: none;
-  background-image: url(images/work\ background.png);
+  background-image: url(images/profession1\ background.png);
   width: 100%;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+  /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
 .profession1 h2 {
@@ -302,9 +320,10 @@ img {
 
 .profession2 {
   list-style-type: none;
-  background-image: url(images/work\ background.png);
+  background-image: url(images/profession2\ background.png);
   width: 100%;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+  /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
 .profession2 h2 {
@@ -332,9 +351,10 @@ img {
 
 .profession3 {
   list-style-type: none;
-  background-image: url(images/work\ background.png);
+  background-image: url(images/profession3\ background.png);
   width: 100%;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+  /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
 .profession3 h2 {
@@ -362,9 +382,10 @@ img {
 
 .profession4 {
   list-style-type: none;
-  background-image: url(images/work\ background.png);
+  background-image: url(images/profession1\ background.png);
   width: 100%;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+  /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
 .profession4 h2 {
@@ -392,9 +413,10 @@ img {
 
 .profession5 {
   list-style-type: none;
-  background-image: url(images/work\ background.png);
+  background-image: url(images/profession2\ background.png);
   width: 100%;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+  /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
 .profession5 h2 {
@@ -422,12 +444,13 @@ img {
 
 .profession6 {
   list-style-type: none;
-  background-image: url(images/work\ background.png);
+  background-image: url(images/profession3\ background.png);
   width: 100%;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+  /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
-.profession3:hover,
+/* .profession3:hover,
 .profession2:hover,
 .profession1:hover,
 .profession4:hover,
@@ -435,7 +458,7 @@ img {
 .profession6:hover {
   width: 80%;
   height: 80%;
-}
+} */
 
 .profession6 h2 {
   font-family: 'Crete Round', sans-serif;
@@ -528,6 +551,10 @@ img {
   width: 17px;
   cursor: pointer;
   user-select: none;
+}
+
+.last-buttons img {
+  width: 15px;
 }
 
 .technologies .tech div img {
@@ -731,7 +758,7 @@ textarea {
   background: #3c3a39;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   width: 100%;
-  height: calc(100% - 22%);
+  height: calc(100% - 8%);
 }
 
 .mobile-menu__close {
@@ -756,10 +783,84 @@ textarea {
   width: 10rem;
   left: calc(50% - 134px / 2 - 0.5px);
   position: absolute;
-  top: calc(87.5vh);
+  top: calc(100vh - 15px);
 }
 
 .hidden {
+  display: none;
+}
+
+.modal-section {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(151, 148, 147, 50%);
+  backdrop-filter: blur(3px);
+}
+
+.modal-contents {
+  margin: 3vh;
+  height: 94vh;
+  background-color: #fff;
+}
+
+.title-sect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 5%;
+}
+
+.title-sect h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.modal-list-tag {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  padding: 7% 5% 0% 5%;
+}
+
+.modal-tags {
+  border: 1px solid #8993a4;
+  text-align: center;
+  padding: 10px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.second-sect {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.last-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.last-buttons {
+  display: flex;
+  gap: 13px;
+}
+
+.hide {
   display: none;
 }
 
@@ -880,280 +981,18 @@ textarea {
     grid-column: 1 / 4;
   }
 
-  .profession1 {
-    position: relative;
-    list-style-type: none;
-    background-image: url(images/profession1\ background.png);
-    background-size: cover;
-    height: 100%;
-  }
-
-  .profession1 p {
-    display: none;
-  }
-
-  .profession1 h2 {
-    display: none;
-  }
-
-  .profession1 .list-tag {
-    display: none;
-  }
-
-  .profession1 .tags {
-    display: none;
-  }
-
-  .profession1 button {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .profession2 {
-    list-style-type: none;
-    background-image: url(images/profession2\ background.png);
-    background-size: cover;
-    height: 100%;
-    position: relative;
-  }
-
-  .workings2 {
-    margin: 6%;
-    margin-top: 40%;
-  }
-
-  .profession2 h2 {
-    display: none;
-  }
-
-  .profession2 h3 {
-    margin: 0%;
-    padding: 0%;
+  .contact-page p {
     display: flex;
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 60px;
-    color: #fff;
-  }
-
-  .profession2 p {
+    width: 50%;
     margin: 0%;
     padding: 0%;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #fff;
+    text-align: start;
+    padding-bottom: 13%;
   }
 
-  .profession2 .list-tag {
+  .about-me button {
     margin: 0%;
-    padding: 0%;
-    padding-top: 5%;
-  }
-
-  .profession2 button {
-    display: none;
-  }
-
-  .profession3 {
-    list-style-type: none;
-    background-image: url(images/profession3\ background.png);
-    background-size: cover;
-    height: 100%;
-  }
-
-  .workings3 {
-    margin: 6%;
-    margin-top: 51%;
-  }
-
-  .profession3 h2 {
-    display: none;
-  }
-
-  .profession3 h3 {
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 60px;
-    color: #fff;
-  }
-
-  .profession3 p {
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #fff;
-  }
-
-  .profession3 button {
-    display: none;
-  }
-
-  .profession3 .list-tag {
-    margin: 0%;
-    padding: 0%;
-    padding-top: 5%;
-  }
-
-  .profession4 {
-    list-style-type: none;
-    background-image: url(images/work\ background.png);
-    background-size: cover;
-    height: 100%;
-  }
-
-  .workings4 {
-    margin-left: 6%;
-    margin-right: 6%;
-    margin-top: 40%;
-  }
-
-  .profession4 h2 {
-    margin: 0%;
-    padding: 0%;
-  }
-
-  .profession4 p {
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #fff;
-  }
-
-  .profession4 .list-tag {
-    margin: 0%;
-    padding: 0%;
-    padding-top: 5%;
-  }
-
-  .profession4 button {
-    display: none;
-  }
-
-  .profession5 {
-    list-style-type: none;
-    background-image: url(images/profession2\ background.png);
-    background-size: cover;
-    height: 100%;
-    position: relative;
-  }
-
-  .workings5 {
-    margin: 6%;
-    margin-top: 40%;
-  }
-
-  .profession5 h2 {
-    display: none;
-  }
-
-  .profession5 h3 {
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 60px;
-    color: #fff;
-  }
-
-  .profession5 p {
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #fff;
-  }
-
-  .profession5 .list-tag {
-    margin: 0%;
-    padding: 0%;
-    padding-top: 5%;
-  }
-
-  .profession5 button {
-    display: none;
-  }
-
-  .profession6 {
-    list-style-type: none;
-    background-image: url(images/profession3\ background.png);
-    background-size: cover;
-    height: 100%;
-  }
-
-  .workings6 {
-    margin: 6%;
-    margin-top: 51%;
-  }
-
-  .profession6 h2 {
-    display: none;
-  }
-
-  .profession6 h3 {
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 60px;
-    color: #fff;
-  }
-
-  .profession6 p {
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #fff;
-  }
-
-  .profession6 button {
-    display: none;
-  }
-
-  .profession6 .list-tag {
-    margin: 0%;
-    padding: 0%;
-    padding-top: 5%;
-  }
-
-  .about-me {
-    min-height: fit-content;
-    margin: 0;
-    padding: 0;
-    padding: 5%;
-    background-image: url(images/about-me\ desktop\ background.png);
-    background-position: right;
-    background-size: 40%;
+    margin-bottom: 5%;
   }
 
   .about-me h2 {
@@ -1171,13 +1010,222 @@ textarea {
     font-size: 22px;
   }
 
-  .about-me .button {
-    width: 10%;
+  .profession1 {
+    position: relative;
+    list-style-type: none;
+    background-image: url(images/profession1\ background.png);
+    background-size: cover;
+    height: 100%;
   }
 
-  .about-me button {
-    margin: 0%;
-    margin-bottom: 5%;
+  .profession1:hover p {
+    display: none;
+  }
+
+  .title-sect h2 {
+    display: none;
+  }
+
+  .profession1:hover h2 {
+    display: none;
+  }
+
+  .profession1:hover .list-tag {
+    display: none;
+  }
+
+  .profession1:hover .tags {
+    display: none;
+  }
+
+  .profession1 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession2 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession3 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession4 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession5 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession6 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession1:hover button {
+    display: block;
+  }
+
+  .profession2 {
+    position: relative;
+    list-style-type: none;
+    background-image: url(images/profession2\ background.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  .profession2:hover p {
+    display: none;
+  }
+
+  .profession2:hover h2 {
+    display: none;
+  }
+
+  .profession2:hover .list-tag {
+    display: none;
+  }
+
+  .profession2:hover .tags {
+    display: none;
+  }
+
+  .profession2:hover button {
+    display: block;
+  }
+
+  .profession3 {
+    position: relative;
+    list-style-type: none;
+    background-image: url(images/profession3\ background.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  .profession3:hover p {
+    display: none;
+  }
+
+  .profession3:hover h2 {
+    display: none;
+  }
+
+  .profession3:hover .list-tag {
+    display: none;
+  }
+
+  .profession3:hover .tags {
+    display: none;
+  }
+
+  .profession3:hover button {
+    display: block;
+  }
+
+  .profession4 {
+    position: relative;
+    list-style-type: none;
+    background-image: url(images/profession1\ background.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  .profession4:hover p {
+    display: none;
+  }
+
+  .profession4:hover h2 {
+    display: none;
+  }
+
+  .profession4:hover .list-tag {
+    display: none;
+  }
+
+  .profession4:hover .tags {
+    display: none;
+  }
+
+  .profession4:hover button {
+    display: block;
+  }
+
+  .profession5 {
+    position: relative;
+    list-style-type: none;
+    background-image: url(images/profession2\ background.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  .profession5:hover p {
+    display: none;
+  }
+
+  .profession5:hover h2 {
+    display: none;
+  }
+
+  .profession5:hover .list-tag {
+    display: none;
+  }
+
+  .profession5:hover .tags {
+    display: none;
+  }
+
+  .profession5:hover button {
+    display: block;
+  }
+
+  .profession6 {
+    position: relative;
+    list-style-type: none;
+    background-image: url(images/profession3\ background.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  .profession6:hover p {
+    display: none;
+  }
+
+  .profession6:hover h2 {
+    display: none;
+  }
+
+  .profession6:hover .list-tag {
+    display: none;
+  }
+
+  .profession6:hover .tags {
+    display: none;
+  }
+
+  .profession6:hover button {
+    display: block;
+  }
+
+  .about-me {
+    min-height: fit-content;
+    margin: 0;
+    padding: 0;
+    padding: 5%;
+    background-image: url(images/about-me\ desktop\ background.png);
+    background-position: right;
+    background-size: 40%;
   }
 
   .technologies {
@@ -1288,15 +1336,6 @@ textarea {
     gap: 2%;
   }
 
-  .contact-page p {
-    display: flex;
-    width: 50%;
-    margin: 0%;
-    padding: 0%;
-    text-align: start;
-    padding-bottom: 13%;
-  }
-
   .contact-page form {
     margin: 0%;
   }
@@ -1322,5 +1361,55 @@ textarea {
 
   .links div {
     display: none;
+  }
+
+  .modal-contents {
+    margin: 11vh;
+    height: 78vh;
+    background-color: #fff;
+  }
+
+  .title-sect {
+    padding: 2% 2% 0% 2%;
+    width: 96%;
+    margin: 0;
+  }
+
+  .title-sect h3 {
+    display: flex;
+  }
+
+  .modal-list-tag {
+    width: 96%;
+    padding: 1% 2% 0% 2%;
+  }
+
+  .second-sect {
+    padding: 2% 2% 0% 2%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 18px;
+    grid-template-rows: 100%;
+    height: 76%;
+  }
+
+  .second-sect-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .last-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .last-buttons {
+    position: relative;
   }
 }

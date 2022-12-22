@@ -645,6 +645,8 @@ img {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
+  padding: 11px;
+
 }
 
 .buttons:active {
@@ -862,6 +864,11 @@ textarea {
 
 .hide {
   display: none;
+}
+
+.error-message {
+  height: 20px;
+  line-height: 20px;
 }
 
 .error {

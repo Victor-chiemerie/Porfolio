@@ -18,7 +18,6 @@ menuLinks.forEach((link) => {
 
 const workopen = document.querySelectorAll('#project-button');
 const modalPage = document.querySelector('#modal-section');
-//const closeProjects = document.querySelector('#close-projects');
 const workPages = document.querySelector('#work-pages');
 const modalContent = document.querySelector('#modal-contents');
 
@@ -29,7 +28,7 @@ const mainProject = {
   technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
   liveVersion: 'https://victor-chiemerie.github.io/',
   source: 'https://github.com/Victor-chiemerie/Victor-chiemerie.github.io',
-}
+};
 
 function toggleModal() {
   modalPage.classList.toggle('hide');
@@ -38,9 +37,6 @@ function toggleModal() {
 workopen.forEach((button) => {
   button.addEventListener('click', toggleModal);
 });
-
-//closeProjects.addEventListener('click', () => modalPage.classList.add('hide'));
-
 
 const projects = [
   {
@@ -96,7 +92,7 @@ const projects = [
     technologies: ['html', 'Bootstrap', 'Ruby'],
     liveVersion: 'https://victor-chiemerie.github.io/',
     source: 'https://github.com/Victor-chiemerie/Victor-chiemerie.github.io',
-  }
+  },
 ];
 
 const mainWork = document.createElement('main');
@@ -130,7 +126,6 @@ workPages.appendChild(mainWork);
 
 const mainWorkButton = document.querySelector('#project-button-main');
 mainWorkButton.addEventListener('click', () => {
-
   modalContent.innerHTML = `<div class="title-sect">
     <h2>${mainProject.name}</h2>
     <h3>${mainProject.name}</h3>
@@ -182,7 +177,6 @@ projects.forEach((project) => {
 
   const professionBtn = document.querySelector(`#project-button-${project.id}`);
   professionBtn.addEventListener('click', () => {
-
     modalContent.innerHTML = `<div class="title-sect">
     <h2>${project.name}</h2>
     <h3>${project.name}</h3>
@@ -206,13 +200,9 @@ projects.forEach((project) => {
     </div>
   </div>`;
 
-  const closeMainProjects = document.querySelector('#close-projects');
-  closeMainProjects.addEventListener('click', () => modalPage.classList.add('hide'));
+    const closeMainProjects = document.querySelector('#close-projects');
+    closeMainProjects.addEventListener('click', () => modalPage.classList.add('hide'));
 
-  modalPage.classList.remove('hide');
-  })
+    modalPage.classList.remove('hide');
+  });
 });
-
-
-// projects[0]['id'] = 7;
-// console.log(projects[0]['id']);

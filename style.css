@@ -132,6 +132,21 @@ img {
   height: 20rem;
 }
 
+.title-sect img {
+  width: 20px;
+  height: 20px;
+}
+
+.title-sect h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  display: none;
+}
+
 .work-pages main div h3 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -231,6 +246,15 @@ img {
   color: #172b4d;
 }
 
+.last-sect p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
 .work-pages main div p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -245,6 +269,7 @@ img {
   list-style-type: none;
   background-image: url(images/profession1\ background.png);
   width: 100%;
+
   /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
@@ -297,6 +322,7 @@ img {
   list-style-type: none;
   background-image: url(images/profession2\ background.png);
   width: 100%;
+
   /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
@@ -327,6 +353,7 @@ img {
   list-style-type: none;
   background-image: url(images/profession3\ background.png);
   width: 100%;
+
   /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
@@ -357,6 +384,7 @@ img {
   list-style-type: none;
   background-image: url(images/profession1\ background.png);
   width: 100%;
+
   /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
@@ -387,6 +415,7 @@ img {
   list-style-type: none;
   background-image: url(images/profession2\ background.png);
   width: 100%;
+
   /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
@@ -417,6 +446,7 @@ img {
   list-style-type: none;
   background-image: url(images/profession3\ background.png);
   width: 100%;
+
   /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
@@ -521,6 +551,10 @@ img {
   width: 17px;
   cursor: pointer;
   user-select: none;
+}
+
+.last-buttons img {
+  width: 15px;
 }
 
 .technologies .tech div img {
@@ -760,7 +794,7 @@ textarea {
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 0px;
+  top: 0;
   background: rgba(151, 148, 147, 50%);
   backdrop-filter: blur(3px);
 }
@@ -768,7 +802,7 @@ textarea {
 .modal-contents {
   margin: 3vh;
   height: 94vh;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .title-sect {
@@ -788,28 +822,12 @@ textarea {
   color: #091e42;
 }
 
-.title-sect img {
-  width: 20px;
-  height: 20px;
-}
-
-.title-sect h3 {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  color: #091e42;
-  display: none;
-}
-
 .modal-list-tag {
   list-style-type: none;
   display: flex;
   gap: 20px;
   width: 90%;
   padding: 7% 5% 0% 5%;
-  
 }
 
 .modal-tags {
@@ -821,7 +839,7 @@ textarea {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .second-sect {
@@ -837,22 +855,9 @@ textarea {
   gap: 16px;
 }
 
-.last-sect p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-}
-
 .last-buttons {
   display: flex;
   gap: 13px;
-}
-
-.last-buttons img {
-  width: 15px;
 }
 
 .hide {
@@ -976,6 +981,35 @@ textarea {
     grid-column: 1 / 4;
   }
 
+  .contact-page p {
+    display: flex;
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
+    text-align: start;
+    padding-bottom: 13%;
+  }
+
+  .about-me button {
+    margin: 0%;
+    margin-bottom: 5%;
+  }
+
+  .about-me h2 {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    margin-top: 3%;
+    font-size: 62px;
+  }
+
+  .about-me p {
+    margin: 0%;
+    margin-bottom: 2%;
+    width: 40%;
+    font-size: 22px;
+  }
+
   .profession1 {
     position: relative;
     list-style-type: none;
@@ -985,6 +1019,10 @@ textarea {
   }
 
   .profession1:hover p {
+    display: none;
+  }
+
+  .title-sect h2 {
     display: none;
   }
 
@@ -1006,7 +1044,37 @@ textarea {
     bottom: 0;
   }
 
-  .profession1:hover button{
+  .profession2 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession3 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession4 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession5 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession6 button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .profession1:hover button {
     display: block;
   }
 
@@ -1034,13 +1102,7 @@ textarea {
     display: none;
   }
 
-  .profession2 button {
-    display: none;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .profession2:hover button{
+  .profession2:hover button {
     display: block;
   }
 
@@ -1068,13 +1130,7 @@ textarea {
     display: none;
   }
 
-  .profession3 button {
-    display: none;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .profession3:hover button{
+  .profession3:hover button {
     display: block;
   }
 
@@ -1102,13 +1158,7 @@ textarea {
     display: none;
   }
 
-  .profession4 button {
-    display: none;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .profession4:hover button{
+  .profession4:hover button {
     display: block;
   }
 
@@ -1136,13 +1186,7 @@ textarea {
     display: none;
   }
 
-  .profession5 button {
-    display: none;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .profession5:hover button{
+  .profession5:hover button {
     display: block;
   }
 
@@ -1170,15 +1214,10 @@ textarea {
     display: none;
   }
 
-  .profession6 button {
-    display: none;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .profession6:hover button{
+  .profession6:hover button {
     display: block;
   }
+
   .about-me {
     min-height: fit-content;
     margin: 0;
@@ -1187,30 +1226,6 @@ textarea {
     background-image: url(images/about-me\ desktop\ background.png);
     background-position: right;
     background-size: 40%;
-  }
-
-  .about-me h2 {
-    margin: 0;
-    padding: 0;
-    width: 50%;
-    margin-top: 3%;
-    font-size: 62px;
-  }
-
-  .about-me p {
-    margin: 0%;
-    margin-bottom: 2%;
-    width: 40%;
-    font-size: 22px;
-  }
-
-  .about-me .button {
-    width: 10%;
-  }
-
-  .about-me button {
-    margin: 0%;
-    margin-bottom: 5%;
   }
 
   .technologies {
@@ -1321,15 +1336,6 @@ textarea {
     gap: 2%;
   }
 
-  .contact-page p {
-    display: flex;
-    width: 50%;
-    margin: 0%;
-    padding: 0%;
-    text-align: start;
-    padding-bottom: 13%;
-  }
-
   .contact-page form {
     margin: 0%;
   }
@@ -1360,52 +1366,48 @@ textarea {
   .modal-contents {
     margin: 14vh;
     height: 72vh;
-    background-color: #FFFFFF;
-}
+    background-color: #fff;
+  }
 
-.title-sect {
-  padding: 2% 2% 0% 2%;
-  width: 96%;
-  margin: 0px;
-}
+  .title-sect {
+    padding: 2% 2% 0% 2%;
+    width: 96%;
+    margin: 0;
+  }
 
-.title-sect h2 {
-  display: none;
-}
+  .title-sect h3 {
+    display: flex;
+  }
 
-.title-sect h3 {
-  display: flex;
-}
+  .modal-list-tag {
+    width: 96%;
+    padding: 1% 2% 0% 2%;
+  }
 
-.modal-list-tag {
-  width: 96%;
-  padding: 1% 2% 0% 2%;
-}
+  .second-sect {
+    padding: 2% 2% 0% 2%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 18px;
+  }
 
-.second-sect {
-  padding: 2% 2% 0% 2%;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  gap: 18px;
-}
+  .second-sect-img {
+    width: 100%;
+    height: 100%;
+  }
 
-.second-sect-img{
-  width: 100%;
-  height: 100%;
-}
+  .image {
+    width: 100%;
+    height: 510px;
+  }
 
-.image {
-  width: 100%;
-  height: 510px;
-}
+  .last-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.last-sect {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.last-buttons {
-  position: relative;
-}
+  .last-buttons {
+    position: relative;
+  }
 }

@@ -1364,8 +1364,8 @@ textarea {
   }
 
   .modal-contents {
-    margin: 14vh;
-    height: 72vh;
+    margin: 11vh;
+    height: 78vh;
     background-color: #fff;
   }
 
@@ -1389,6 +1389,8 @@ textarea {
     display: grid;
     grid-template-columns: 60% 40%;
     gap: 18px;
+    grid-template-rows: 100%;
+    height: 76%;
   }
 
   .second-sect-img {
@@ -1398,7 +1400,7 @@ textarea {
 
   .image {
     width: 100%;
-    height: 510px;
+    height: 100%;
   }
 
   .last-sect {

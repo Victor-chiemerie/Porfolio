@@ -1,3 +1,5 @@
+// Mobile Menu
+
 const hamburger = document.querySelector('#hamburger');
 const closeMenu = document.querySelector('#close-img');
 const mobileMenu = document.querySelector('#mobile-menu');

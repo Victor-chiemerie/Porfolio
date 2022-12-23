@@ -229,7 +229,7 @@ form.addEventListener('submit', (event) => {
 
 const fields = document.querySelectorAll('.form-inputs');
 
-const formdata = {
+let formdata = {
   user_name: '',
   user_email: '',
   user_message: '',
@@ -239,12 +239,13 @@ fields.forEach((field) => {
   field.addEventListener('input', () => {
     formdata[field.name] = field.value;
     localStorage.setItem('portfolio-login-details', JSON.stringify(formdata));
+    console.log(formdata);
   });
 });
 
 window.addEventListener('load', () => {
   const data = localStorage.getItem('portfolio-login-details');
-  const formdata = JSON.parse(data);
+  formdata = JSON.parse(data);
 
   fields.forEach((field) => {
     field.value = formdata[field.name];

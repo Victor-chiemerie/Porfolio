@@ -227,4 +227,27 @@ form.addEventListener('submit', (event) => {
 
 // Local Storage
 
+const fields = document.querySelectorAll('.form-inputs');
+
+const formdata = {
+  user_name: '',
+  user_email: '',
+  user_message: ''
+};
+
+fields.forEach(field => {
+  field.addEventListener('input', () => {
+    formdata[field.name] = field.value;
+    localStorage.setItem('portfolio-login-details', JSON.stringify(formdata));
+  })
+});
+
+window.addEventListener('load', () => {
+  let data = localStorage.getItem('portfolio-login-details');
+  let formdata = JSON.parse(data);
+
+    fields.forEach(field => {
+      field.value = formdata[field.name];
+    })
+})
 

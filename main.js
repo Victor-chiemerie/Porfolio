@@ -224,3 +224,7 @@ form.addEventListener('submit', (event) => {
     errorMessage.classList.add('hidden');
   }
 });
+
+// Local Storage
+
+

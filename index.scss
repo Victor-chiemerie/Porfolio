@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=InaiMathi&family=Poppins&family=Roboto&family=Inter&display=swap');
+
+$primary-color: #ff6b00;
+$f-family: 'Crete Round', sans-serif;
+$f-style: normal;
+$f-weight: 500;
+$black-bg: #1C1A19;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // overflow-x: hidden;
+}
+
+header {
+    background: #504f4e;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+
+    menu {
+        display: none;
+    }
+
+    span {
+        font-weight: 800;
+    }
+  }
+ 
+  .welcome_page {
+    background-color: $black-bg;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    color: white;
+    background-image: url(images/welcome_image.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 40%;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            color: $primary-color;
+            font-family: $f-family;
+            font-style: $f-style;
+            font-weight: $f-weight;
+            font-size: 60px;
+            line-height: 65px;
+        }
+    
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            color: #fff5e1;
+        }
+    
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+
+        span {
+            font-size: 27px;
+        }
+    }
+
+  }

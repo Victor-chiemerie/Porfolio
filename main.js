@@ -239,7 +239,7 @@ fields.forEach((field) => {
   field.addEventListener('input', () => {
     formdata[field.name] = field.value;
     localStorage.setItem('portfolio-login-details', JSON.stringify(formdata));
-    console.log(formdata);
+    // console.log(formdata);
   });
 });
 

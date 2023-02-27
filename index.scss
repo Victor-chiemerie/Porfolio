@@ -13,6 +13,23 @@ $black-bg: #1C1A19;
     // overflow-x: hidden;
 }
 
+li {
+    list-style: none;
+}
+
+.buttons {
+    background: $primary-color;
+    padding: 12px;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 0.03em;
+    border-width: 0;
+  }
+
 header {
     background: #504f4e;
     display: flex;
@@ -81,5 +98,81 @@ header {
             font-size: 27px;
         }
     }
+  }
+
+  .work-pages {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-bottom: 100px;
+
+    main {
+
+        .work-item1 {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            h2 {
+                font-family: $f-family;
+                font-style: $f-style;
+                font-weight: $f-weight;
+                font-size: 48px;
+                text-align: center;
+            }
+
+            div {
+                width: 100%;
+                border: 0.1px solid rgb(174, 172, 172);
+            }
+        }
+        
+        .work-item2 {
+            padding-top: 70px;
+
+            .picture {
+                background-image: url(images/Math-magicians.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 16.5rem;
+            }
+
+            .multi-stories {
+
+                h3 {
+                    font-family: $f-family;
+                    font-style: $f-style;
+                    font-weight: $f-weight;
+                    font-size: 32px;
+                    color: #091e42;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-style: $f-style;
+                    font-weight: $f-family;
+                    font-size: 16px;
+                    color: #091e42;
+                }
+
+                ul {
+                    padding: 0;
+                    display: flex;
+                    gap: 20px;
+
+                    li {
+                        border: 1px solid #8993a4;
+                        font-family: 'Inter', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        color: #091e42;
+                        padding: 8px 10px;
+                    }
+                }
+            }
+        }
+    }
+
 
   }

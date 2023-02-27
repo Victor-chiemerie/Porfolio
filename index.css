@@ -5,6 +5,23 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
+.buttons {
+  background: #ff6b00;
+  padding: 12px;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  letter-spacing: 0.03em;
+  border-width: 0;
+}
+
 header {
   background: #504f4e;
   display: flex;
@@ -65,4 +82,64 @@ header span {
 }
 .welcome_page ul span {
   font-size: 27px;
+}
+
+.work-pages {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+.work-pages main .work-item1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.work-pages main .work-item1 h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+.work-pages main .work-item1 div {
+  width: 100%;
+  border: 0.1px solid rgb(174, 172, 172);
+}
+.work-pages main .work-item2 {
+  padding-top: 70px;
+}
+.work-pages main .work-item2 .picture {
+  background-image: url(images/Math-magicians.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16.5rem;
+}
+.work-pages main .work-item2 .multi-stories h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: #091e42;
+}
+.work-pages main .work-item2 .multi-stories p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: "Crete Round", sans-serif;
+  font-size: 16px;
+  color: #091e42;
+}
+.work-pages main .work-item2 .multi-stories ul {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.work-pages main .work-item2 .multi-stories ul li {
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #091e42;
+  padding: 8px 10px;
 }/*# sourceMappingURL=index.css.map */

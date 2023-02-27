@@ -1,6 +1,6 @@
 // Mobile Menu
 
-const hamburger = document.querySelector('#hamburger');
+const hamburger = document.getElementById('hamburger');
 const closeMenu = document.querySelector('#close-img');
 const mobileMenu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelectorAll('#mobile-menu li');
@@ -100,10 +100,9 @@ const projects = [
 const mainWork = document.createElement('main');
 mainWork.classList.add('first-page');
 mainWork.innerHTML = `
-  <div class="work-container">
     <div class="work-item1">
-      <h2 class="title"> My Recent Works </h2>
-      <img class="line" src="images/line.png" alt="Middle-section">
+      <h2 class="title">My Recent Works</h2>
+      <div class="line"></div>
     </div>
       <div class="work-item2">
         <div class="picture"></div>
@@ -121,7 +120,6 @@ mainWork.innerHTML = `
               <button id="project-button-main" class="buttons">See Project</button>
         </div>
       </div>
-  </div>
 `;
 
 workPages.appendChild(mainWork);

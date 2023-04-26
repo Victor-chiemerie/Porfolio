@@ -37,6 +37,8 @@ header menu {
 }
 header span {
   font-weight: 800;
+  font-size: 40px;
+  color: white;
 }
 
 .welcome_page {
@@ -82,6 +84,7 @@ header span {
 }
 .welcome_page ul span {
   font-size: 27px;
+  color: white;
 }
 
 .work-pages {
@@ -142,4 +145,7 @@ header span {
   font-size: 17px;
   color: #091e42;
   padding: 8px 10px;
+}
+.work-pages li {
+  background-color: aqua;
 }/*# sourceMappingURL=index.css.map */

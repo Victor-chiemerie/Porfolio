@@ -40,7 +40,7 @@ const projects = [
     name: 'Data Dashboard Healthcare',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featuredImage: 'profession2 background.png',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
+    technologies: ['html', 'Bootstrap', 'Ruby', 'Rails'],
     liveVersion: 'https://victor-chiemerie.github.io/',
     source: 'https://github.com/Victor-chiemerie/Victor-chiemerie.github.io',
   },
@@ -75,7 +75,7 @@ const works = () => {
 
     workPages.appendChild(list);
 
-    const tools = document.querySelector(`tech${project.id}`);
+    const tools = document.querySelector(`#tech${project.id}`);
     let tech = '';
 
     project.technologies.forEach((tool) => {

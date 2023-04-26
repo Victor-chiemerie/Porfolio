@@ -46,6 +46,8 @@ header {
 
     span {
         font-weight: 800;
+        font-size: 40px;
+        color:white;
     }
   }
  
@@ -96,6 +98,7 @@ header {
 
         span {
             font-size: 27px;
+            color:white;
         }
     }
   }
@@ -172,6 +175,10 @@ header {
                 }
             }
         }
+    }
+
+    li {
+        background-color: aqua;
     }
 
 

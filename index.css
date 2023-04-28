@@ -146,6 +146,15 @@ header span {
   color: #091e42;
   padding: 8px 10px;
 }
-.work-pages li {
+.work-pages .profession {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.work-pages .profession li {
   background-color: aqua;
+}
+.work-pages .profession button {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

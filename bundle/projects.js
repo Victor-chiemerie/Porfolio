@@ -55,6 +55,9 @@ const projects = [
   },
 ];
 
+const others = document.createElement('ul');
+others.classList.add('profession');
+
 const workPages = document.querySelector('#work-pages');
 
 const works = () => {
@@ -63,6 +66,7 @@ const works = () => {
     list.classList.add(`profession${project.id}`);
     list.innerHTML = `
       <div class="workings1">
+      <img class="line2" src=images/${project.featuredImage} alt="Last-section">
         <h2 class="topic">${project.name}</h2>
           <p>
             ${project.description}
@@ -73,7 +77,8 @@ const works = () => {
       </div>
     `;
 
-    workPages.appendChild(list);
+    others.appendChild(list);
+    workPages.appendChild(others);
 
     const tools = document.querySelector(`#tech${project.id}`);
     let tech = '';

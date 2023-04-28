@@ -66,7 +66,7 @@ const works = () => {
     list.classList.add(`profession${project.id}`);
     list.innerHTML = `
       <div class="workings1">
-      <img class="line2" src=images/${project.featuredImage} alt="Last-section">
+      <img class="line2" src="images/${project.featuredImage}" alt="Last-section">
         <h2 class="topic">${project.name}</h2>
           <p>
             ${project.description}

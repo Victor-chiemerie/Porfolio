@@ -153,8 +153,21 @@ header span {
   gap: 20px;
 }
 .work-pages .profession li {
-  background-color: aqua;
+  position: relative;
 }
-.work-pages .profession button {
+.work-pages .profession li img {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.7;
+}
+.work-pages .profession li h2 {
+  position: relative;
+}
+.work-pages .profession li p {
+  position: relative;
+}
+.work-pages .profession li button {
+  width: 100%;
+  position: relative;
 }/*# sourceMappingURL=index.css.map */

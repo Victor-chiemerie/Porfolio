@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Website Protfolio',
+    name: 'Website Portfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featuredImage: 'profession3 background.png',
     technologies: ['html', 'Bootstrap', 'Ruby'],
@@ -46,7 +46,7 @@ const projects = [
   },
   {
     id: 6,
-    name: 'Website Protfolio',
+    name: 'Website Portfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featuredImage: 'profession3 background.png',
     technologies: ['html', 'Bootstrap', 'Ruby'],

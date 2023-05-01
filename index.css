@@ -298,4 +298,37 @@ header span {
   line-height: 44px;
   text-align: center;
   color: #172B4D;
+}
+.contact-page form {
+  margin-top: 70px;
+}
+.contact-page form ul {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-page form ul li {
+  width: 100%;
+}
+.contact-page form ul li input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid rgb(185, 180, 180);
+}
+.contact-page form ul li textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  border: none;
+  background-color: #FBF8F7;
+}
+.contact-page form ul button {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

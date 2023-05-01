@@ -1,5 +1,6 @@
 import works from './bundle/projects.js';
 import toggleMenu from './bundle/mobileMenu.js';
+import formCheck from './bundle/formCheck.js';
 
 const mainProject = {
   name: 'Math-Magicians',
@@ -46,6 +47,7 @@ tools.innerHTML = list;
 
 works();
 toggleMenu();
+formCheck();
 
 const modalPage = document.getElementById('modal-section');
 const modalContent = document.getElementById('modal-contents');

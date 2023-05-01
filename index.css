@@ -347,8 +347,8 @@ footer ul span {
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 80%;
   height: 100vh;
   background-color: #3c2f28;
   opacity: 0.99;

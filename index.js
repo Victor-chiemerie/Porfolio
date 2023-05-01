@@ -48,6 +48,7 @@ tools.innerHTML = list;
 works();
 toggleMenu();
 formCheck();
+localStorage();
 
 const modalPage = document.getElementById('modal-section');
 const modalContent = document.getElementById('modal-contents');

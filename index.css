@@ -221,4 +221,81 @@ header span {
   font-weight: 500;
   font-size: 60px;
   line-height: 65px;
+}
+
+.technologies {
+  background-color: #1C1A19;
+  padding-top: 110px;
+  padding-bottom: 130px;
+  color: white;
+}
+.technologies .tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+}
+.technologies .tech li {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.technologies .tech li div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.technologies .tech li div .menu1 {
+  width: 18px;
+  height: 18px;
+  background: #FF6B00;
+  transform: rotate(-45deg);
+}
+.technologies .tech li div .menu2 {
+  width: 18px;
+  height: 18px;
+  background: #FF6B00;
+}
+.technologies .tech li div .menu3 {
+  width: 18px;
+  height: 18px;
+  background: #FF6B00;
+  border-radius: 150px;
+}
+.technologies .tech li div p {
+  width: 164px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.technologies .tech li ul {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.technologies .tech li ul li {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.contact-page {
+  padding: 90px 15px;
+}
+.contact-page p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172B4D;
 }/*# sourceMappingURL=index.css.map */

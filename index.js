@@ -1,4 +1,5 @@
 import works from './bundle/projects.js';
+import toggleMenu from './bundle/mobileMenu.js';
 
 const mainProject = {
   name: 'Math-Magicians',
@@ -44,3 +45,4 @@ mainProject.technologies.forEach((tool) => {
 tools.innerHTML = list;
 
 works();
+toggleMenu();

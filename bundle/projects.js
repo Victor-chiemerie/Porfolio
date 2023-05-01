@@ -87,9 +87,41 @@ const works = () => {
       tech += `<li class="tags">${tool}</li>`;
     });
 
-    console.log(tools);
-
     tools.innerHTML = tech;
+
+    // ...............................................................
+
+    const modalPage = document.getElementById('modal-section');
+    const modalContent = document.getElementById('modal-contents');
+    const professionBtn = document.querySelector(`#project-button-${project.id}`);
+
+    professionBtn.addEventListener('click', () => {
+      modalContent.innerHTML = `
+      <div class="title-sect">
+        <h2>${project.name}</h2>
+        <span class="bi-x" id="close-projects"></span>
+      </div>
+      <ul class="modal-list-tag">
+        ${tech}
+      </ul>
+      <div class="second-sect">
+        <div class="image">
+          <img src="images/${project.featuredImage}" alt="Snapshot image">
+        </div>
+        <div class="last-sect">
+          <p>${project.description}</p>
+          <div class="last-buttons">
+            <a href="${project.liveVersion}"><button class="buttons">See Live <span class="bi-box-arrow-right"></span></button></a>
+            <a href="${project.source}"><button class="buttons">See Source <span class="bi-github"></span></button></a>
+          </div>
+        </div>
+      </div>`;
+
+      const closeMainProjects = document.getElementById('close-projects');
+      closeMainProjects.addEventListener('click', () => modalPage.classList.add('hide'));
+
+      modalPage.classList.remove('hide');
+    });
   });
 };
 

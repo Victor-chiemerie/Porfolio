@@ -387,6 +387,78 @@ footer ul span {
           user-select: none;
 }
 
+.modal-section {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(151, 148, 147, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 35px 15px;
+}
+.modal-section .modal-contents {
+  background-color: #fff;
+  padding: 25px 15px;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.modal-section .modal-contents .title-sect {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-section .modal-contents .title-sect h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #091e42;
+}
+.modal-section .modal-contents .title-sect span {
+  font-size: 35px;
+}
+.modal-section .modal-contents ul {
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+.modal-section .modal-contents ul li {
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #091e42;
+  padding: 7px 8px;
+}
+.modal-section .modal-contents .second-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-section .modal-contents .second-sect .image {
+  width: 100%;
+  height: 250px;
+}
+.modal-section .modal-contents .second-sect .image img {
+  width: 100%;
+  height: 100%;
+}
+.modal-section .modal-contents .second-sect p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #091e42;
+}
+.modal-section .modal-contents .second-sect .last-buttons {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  gap: 20px;
+}
+
 .hidden {
   display: none;
 }

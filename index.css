@@ -197,4 +197,28 @@ header span {
   width: 100%;
   position: relative;
   margin-top: 20px;
+}
+
+.about-me {
+  background-color: #1C1A19;
+  color: white;
+  background-image: url(images/background\ image\ 2.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 40%;
+  padding: 0 15px;
+}
+.about-me div {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  border-bottom: 2px solid grey;
+  text-align: center;
+}
+.about-me div h2 {
+  color: #ff6b00;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 65px;
 }/*# sourceMappingURL=index.css.map */

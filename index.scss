@@ -237,3 +237,32 @@ header {
         }        
     }
   }
+
+.about-me {
+    background-color: #1C1A19;
+    color: white;
+    background-image: url(images/background\ image\ 2.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 40%;
+    padding: 0 15px;
+
+    div {
+        padding-top: 120px;
+        padding-bottom: 160px;
+        border-bottom: 2px solid grey;
+        text-align: center;
+
+        h2 {
+            color: $primary-color;
+            font-family: $f-family;
+            font-style: $f-style;
+            font-weight: $f-weight;
+            font-size: 60px;
+            line-height: 65px;
+            
+        }
+    }
+
+    
+}

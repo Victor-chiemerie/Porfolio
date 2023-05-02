@@ -144,6 +144,34 @@ footer ul span {
   justify-content: space-between;
 }
 
+.about-me div h2 {
+  color: #ff6b00;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 65px;
+}
+
+.work-pages .profession li h2 {
+  position: relative;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  padding: 15px;
+  padding-top: 70px;
+}
+
+.work-pages main .work-item1 h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+
 .modal-section .modal-contents .title-sect h2 {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
@@ -192,6 +220,16 @@ footer ul span {
   width: 100%;
 }
 
+.technologies .tech li {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.work-pages .profession li {
+  position: relative;
+}
+
 .modal-section .modal-contents ul li {
   border: 1px solid #8993a4;
   font-family: "Inter", sans-serif;
@@ -213,9 +251,36 @@ footer ul span {
   height: 250px;
 }
 
+.work-pages .profession li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.89;
+}
+
 .modal-section .modal-contents .second-sect .image img {
   width: 100%;
   height: 100%;
+}
+
+.work-pages .profession li p {
+  position: relative;
+  padding: 0 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+}
+
+.technologies .tech li div p {
+  width: 164px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 .modal-section .modal-contents .second-sect p {
@@ -245,18 +310,17 @@ footer ul span {
   gap: 25px;
 }
 
-.work-pages main .work-item1 h2 {
-  font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  text-align: center;
-}
-
 .mobile-menu div {
   display: flex;
   justify-content: flex-end;
   padding: 10px 20px;
+}
+
+.about-me div {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  border-bottom: 2px solid grey;
+  text-align: center;
 }
 
 .work-pages main .work-item1 div {
@@ -298,6 +362,13 @@ footer ul span {
   gap: 25px;
 }
 
+.work-pages .profession li ul {
+  padding: 0;
+  padding: 0 15px;
+  display: flex;
+  gap: 15px;
+}
+
 .work-pages main .work-item2 .multi-stories ul {
   padding: 0;
   display: flex;
@@ -309,6 +380,15 @@ footer ul span {
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
+}
+
+.work-pages .profession li ul li {
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  padding: 8px 10px;
 }
 
 .work-pages main .work-item2 .multi-stories ul li {
@@ -327,53 +407,6 @@ footer ul span {
   flex-direction: column;
   gap: 20px;
   margin-top: 20px;
-}
-
-.work-pages .profession li {
-  position: relative;
-}
-
-.work-pages .profession li img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0.89;
-}
-
-.work-pages .profession li h2 {
-  position: relative;
-  font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  color: #fff;
-  padding: 15px;
-  padding-top: 70px;
-}
-
-.work-pages .profession li p {
-  position: relative;
-  padding: 0 15px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  color: white;
-}
-
-.work-pages .profession li ul {
-  padding: 0;
-  padding: 0 15px;
-  display: flex;
-  gap: 15px;
-}
-
-.work-pages .profession li ul li {
-  background: rgba(255, 255, 255, 0.24);
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-size: 15px;
-  color: white;
-  padding: 8px 10px;
 }
 
 .contact-page form ul button {
@@ -396,22 +429,6 @@ footer ul span {
   padding: 0 15px;
 }
 
-.about-me div {
-  padding-top: 120px;
-  padding-bottom: 160px;
-  border-bottom: 2px solid grey;
-  text-align: center;
-}
-
-.about-me div h2 {
-  color: #ff6b00;
-  font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 65px;
-}
-
 .technologies {
   background-color: #1c1a19;
   padding-top: 110px;
@@ -425,12 +442,6 @@ footer ul span {
   align-items: center;
   gap: 40px;
   padding: 0;
-}
-
-.technologies .tech li {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
 }
 
 .technologies .tech li div {
@@ -457,17 +468,6 @@ footer ul span {
   height: 18px;
   background: #ff6b00;
   border-radius: 150px;
-}
-
-.technologies .tech li div p {
-  width: 164px;
-  height: 24px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  display: flex;
-  align-items: center;
-  margin: 0;
 }
 
 .contact-page {

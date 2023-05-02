@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=InaiMathi&family=Poppins&family=Roboto&family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.buttons {
+  background: #ff6b00;
+  padding: 12px;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  letter-spacing: 0.03em;
+  border-width: 0;
+}
+
+header {
+  background: #504f4e;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+header menu {
+  display: none;
+}
+
+header span {
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+}
+
+.welcome_page {
+  background-color: #1c1a19;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  color: white;
+  background-image: url(images/welcome_image.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 40%;
+}
+
+.welcome_page div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome_page div h1 {
+  color: #ff6b00;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 65px;
+}
+
+.welcome_page div h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff5e1;
+}
+
+.contact-page p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.welcome_page div p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+footer ul {
+  padding: 0;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.welcome_page ul {
+  display: flex;
+  gap: 20px;
+}
+
+footer ul span {
+  font-size: 25px;
+  color: #505f79;
+}
+
+.welcome_page ul span {
+  font-size: 27px;
+  color: white;
+}
+
+.modal-section {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(151, 148, 147, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  padding: 35px 15px;
+}
+
+.modal-section .modal-contents {
+  background-color: #fff;
+  padding: 25px 15px;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-section .modal-contents .title-sect {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me div h2 {
+  color: #ff6b00;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 65px;
+}
+
+.work-pages .profession li h2 {
+  position: relative;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  padding: 15px;
+  padding-top: 70px;
+}
+
+.work-pages main .work-item1 h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+
+.modal-section .modal-contents .title-sect h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #091e42;
+}
+
+.mobile-menu div span {
+  font-size: 45px;
+  color: white;
+}
+
+.modal-section .modal-contents .title-sect span {
+  font-size: 35px;
+}
+
+.mobile-menu ul {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-page form ul {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-section .modal-contents ul {
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.mobile-menu ul li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 0 10px;
+}
+
+.contact-page form ul li {
+  width: 100%;
+}
+
+.technologies .tech li {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.work-pages .profession li {
+  position: relative;
+}
+
+.modal-section .modal-contents ul li {
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #091e42;
+  padding: 7px 8px;
+}
+
+.modal-section .modal-contents .second-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-section .modal-contents .second-sect .image {
+  width: 100%;
+  height: 250px;
+}
+
+.work-pages .profession li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.89;
+}
+
+.modal-section .modal-contents .second-sect .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.work-pages .profession li p {
+  position: relative;
+  padding: 0 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+}
+
+.technologies .tech li div p {
+  width: 164px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.modal-section .modal-contents .second-sect p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #091e42;
+}
+
+.modal-section .modal-contents .second-sect .last-buttons {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.work-pages {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.work-pages main .work-item1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.mobile-menu div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.about-me div {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  border-bottom: 2px solid grey;
+  text-align: center;
+}
+
+.work-pages main .work-item1 div {
+  width: 100%;
+  border: 0.1px solid rgb(174, 172, 172);
+}
+
+.work-pages main .work-item2 {
+  padding-top: 70px;
+}
+
+.work-pages main .work-item2 .picture {
+  background-image: url(images/Math-magicians.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16.5rem;
+}
+
+.work-pages main .work-item2 .multi-stories h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: #091e42;
+}
+
+.work-pages main .work-item2 .multi-stories p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #091e42;
+}
+
+.technologies .tech li ul {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.work-pages .profession li ul {
+  padding: 0;
+  padding: 0 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.work-pages main .work-item2 .multi-stories ul {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.technologies .tech li ul li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.work-pages .profession li ul li {
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  padding: 8px 10px;
+}
+
+.work-pages main .work-item2 .multi-stories ul li {
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #091e42;
+  padding: 8px 10px;
+}
+
+.work-pages .profession {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-page form ul button {
+  width: fit-content;
+}
+
+.work-pages .profession li button {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.about-me {
+  background-color: #1c1a19;
+  color: white;
+  background-image: url(images/background\ image\ 2.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 40%;
+  padding: 0 15px;
+}
+
+.technologies {
+  background-color: #1c1a19;
+  padding-top: 110px;
+  padding-bottom: 130px;
+  color: white;
+}
+
+.technologies .tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+}
+
+.technologies .tech li div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.technologies .tech li div .menu1 {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  transform: rotate(-45deg);
+}
+
+.technologies .tech li div .menu2 {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+}
+
+.technologies .tech li div .menu3 {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  border-radius: 150px;
+}
+
+.contact-page {
+  padding: 80px 15px;
+  border-bottom: 1px solid rgb(216, 214, 214);
+}
+
+.contact-page form {
+  margin-top: 70px;
+}
+
+.contact-page form ul li input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid rgb(185, 180, 180);
+}
+
+.contact-page form ul li textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  border: none;
+  background-color: #fbf8f7;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  background-color: #3c2f28;
+  opacity: 0.99;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff5e1;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  display: none;
+}

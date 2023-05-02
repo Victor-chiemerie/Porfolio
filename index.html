@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victors Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <script src="main.js" defer></script> -->
+    <script src="index.js" type="module" defer></script>
 </head>
 <body>
     <!-- Tool box -->
-    <header class="tool-box">
-        <div class="headder">
-            <a class="name" href="#">Welcome</a>
-            <nav>
-              <a id="hamburger">
-                <img class="icon" src="images/Union.png" alt="more-info">
-              </a>
-            </nav>
+    <header class="tool-box container-fluid">
+        <!-- <div class="headder"> -->
+            <div class="name" href="#">Welcome</div>
+            <span class="material-symbols-outlined" id="hamburger">
+              menu
+              </span>
             <menu class="menu-bar">
               <a class="name" href="#work-pages">Portfolio</a>
               <a class="name" href="#">About</a>
               <a class="name" href="#">Contact</a>
               <img class="Message-icon" src="images/Message icon.png" alt="Send-a-mail">
             </menu>
-        </div>
+        <!-- </div> -->
     </header>
     <!-- welcome_page -->
-    <section class="welcome_page">
+    <section class="welcome_page container">
          <!-- welcome message -->
-         <div class="beginning-page">
+         <!-- <div class="beginning-page"> -->
           <div class="welcome_message">
             <h1 class="greeting">Hey There. I'm Nwadinigwe Victor</h1>
               <h2 class="work">I am a software developer</h2>
@@ -42,57 +45,47 @@
           <!-- end of welcome message -->
           <!-- social media -->
           <ul class="social_media">
-              <li>
                   <a href="https://github.com/Victor-chiemerie">
-                      <img src="images/github.png" alt="github">
+                    <span class="bi-github"></span>
                   </a>
-              </li>
-              <li>
-                  <a href="https://www.linkedin.com/in/victor-chiemerie-460475246/">
-                      <img src="images/linkedin.png" alt="linkedin">
+                  <a href="https://www.linkedin.com/in/victornwadinigwe/">
+                      <span class='bi-linkedin'></span>
                   </a>
-              </li>
-              <li>
                   <a href="https://twitter.com/VictorChiemer20">
-                      <img src="images/Twitter.png" alt="twitter">
+                    <span class='bi-twitter'></span>
                   </a>
-              </li>
-              <li>
+                  <a href="https://angel.co/u/victornwadinigwe">
+                    <span class='bi-medium'></span>
+                  </a>
                   <a href="#">
-                      <img src="images/medium.png" alt="medium">
+                    <span class='bi-behance'></span>
                   </a>
-              </li>
-              <li>
-                  <a href="#">
-                      <img src="images/angel list.png" alt="angellist">
-                  </a>
-              </li>
           </ul>
           <!-- end of social media -->
-         </div>
+         <!-- </div> -->
     </section>
     <!-- work pages -->
-    <section class="work-pages" id="work-pages">
+    <section class="work-pages container" id="work-pages">
     </section>
     <!-- about me page -->
     <section class="about-me" id="about-me">
-      <h2>About me</h2>
+      <div>
+        <h2>About me</h2>
         <p>
           Hello I’m a software developer! I can help you build a product , 
           feature or website Look through some of my work and experience! 
           If you like what you see and have a project you need coded, 
           don’t hestiate to contact me.
         </p>
-      <button class="buttons">Get My Resume</button>
+      <button class="buttons" type="button">Get My Resume</button>
+      </div>
     </section>
     <!-- technologies -->
     <section class="technologies">
-      <img class="line2" src="images/line 2.png" alt="Last-section">
-      <div class="tech">
-        <div class="tech1">
-          <div class="language-sect">
+      <ul class="tech">
+          <li class="language-sect">
             <div class="language">
-              <img src="images/diamond.png" alt="1st-point">
+              <menu class="menu1"></menu>
               <p>Language</p>
             </div>
             <ul>
@@ -101,12 +94,10 @@
               <li>Html</li>
               <li>Css</li>
             </ul>
-          </div>
-        </div>
-        <div class="tech2">
-          <div class="frameworks-sect">
+          </li>
+          <li class="frameworks-sect">
             <div class="frameworks">
-              <img src="images/square.png" alt="Second-poinnt">
+              <menu class="menu2"></menu>
               <p>Frameworks</p>
             </div>
             <ul>
@@ -116,12 +107,10 @@
               <li>CapyBara</li>
               <li>Selenium</li>
             </ul>
-          </div>
-        </div>
-        <div class="tech3">
-          <div class="skills-sect">
+          </li>
+          <li class="skills-sect">
             <div class="skills">
-              <img src="images/circle.png" alt="Last-point">
+              <menu class="menu3"></menu>
               <p>Skills</p>
             </div>
             <ul>
@@ -131,9 +120,8 @@
               <li>Gitlab</li>
               <li>Terminal</li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </li>
+        </ul>
     </section>
     <!-- contact page -->
     <section class="contact-page" id="contact-page">
@@ -149,7 +137,7 @@
             <input type="email" class="form-inputs" id="user-email" name="user_email" placeholder="Email Address" required/>
           </li>
           <li>
-            <textarea class="form-inputs" name="user_message" placeholder="Enter text here" maxlength="500" required></textarea>
+            <textarea class="form-inputs" name="user_message" placeholder="Write me something..." maxlength="500" required></textarea>
           </li>
           <div class="error-message">
             <span id="error-message" class="error hidden">Testing error message.</span>
@@ -160,50 +148,32 @@
     </section>
     <!-- links -->
     <footer class="links">
-      <ul class="bottom-social_media">
-        <li>
-            <a href="https://github.com/Victor-chiemerie">
-                <img src="images/Dark git.png" alt="github">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/victor-chiemerie-460475246/">
-                <img src="images/dark linkedin.png" alt="linkedin">
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/VictorChiemer20">
-                <img src="images/dark twitter.png" alt="twitter">
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/dark medium.png" alt="medium">
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/dark angellist.png" alt="angellist">
-            </a>
-        </li>
-    </ul>
-    <div>
-      <img class="lastline" src="images/last line.png" alt="Horizontal-slide">
-    </div>
+      <ul class="social_media">
+        <a href="https://github.com/Victor-chiemerie">
+          <span class="bi-github"></span>
+        </a>
+        <a href="https://www.linkedin.com/in/victornwadinigwe/">
+            <span class='bi-linkedin'></span>
+        </a>
+        <a href="https://twitter.com/VictorChiemer20">
+          <span class='bi-twitter'></span>
+        </a>
+        <a href="https://angel.co/u/victornwadinigwe">
+          <span class='bi-medium'></span>
+        </a>
+        <a href="#">
+          <span class='bi-behance'></span>
+        </a>
+      </ul>
     </footer>
     <!-- Mobile menu -->
     <section class="mobile-menu hidden" id="mobile-menu">
-      <div class="mobile-menu-container">
-        <div class="mobile-menu__close">
-          <img src="images/close-icon.png" id="close-img">
-        </div>
+      <div><span class="bi-x" id="closeMenu"></span></div>
         <ul>
           <li><a href="#work-pages">Portfolio</a></li>
           <li><a href="#about-me">About</a></li>
           <li><a href="#contact-page">Contact</a></li>
         </ul>
-        <img class="lastline2" src="images/last line.png" alt="Horizontal-slide">
-      </div>
     </section>
     <section class="modal-section hide" id="modal-section">
       <div class="modal-contents" id="modal-contents">

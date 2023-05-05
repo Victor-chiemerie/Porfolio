@@ -39,6 +39,7 @@ header {
   color: white;
   font-size: 30px;
   font-weight: 600;
+  padding: 2% 6%;
 
   menu {
     display: none;
@@ -53,13 +54,14 @@ header {
 
 .welcome_page {
   background-color: $black-bg;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding: 25% 6%;
   color: white;
   background-image: url(images/welcome_image.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 40%;
+  display: flex;
+  flex-direction: column;
 
   div {
     display: flex;
@@ -121,6 +123,7 @@ header {
         font-weight: $f-weight;
         font-size: 48px;
         text-align: center;
+        width: -webkit-fill-available;
       }
 
       div {
@@ -135,7 +138,7 @@ header {
       .picture {
         background-image: url(images/Math-magicians.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 100% 100%;
         height: 16.5rem;
       }
 
@@ -182,17 +185,12 @@ header {
     margin-top: 20px;
 
     li {
-      position: relative;
-
-      img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        opacity: 0.89;
-      }
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
 
       h2 {
-        position: relative;
         font-family: "Crete Round", sans-serif;
         font-style: normal;
         font-weight: 500;
@@ -203,7 +201,6 @@ header {
       }
 
       p {
-        position: relative;
         padding: 0 15px;
         font-family: "Inter", sans-serif;
         font-style: normal;
@@ -229,7 +226,6 @@ header {
 
       button {
         width: 100%;
-        position: relative;
         margin-top: 20px;
       }
     }
@@ -498,32 +494,34 @@ footer {
     }
 
     .second-sect {
+      flex: 1;
       display: flex;
       flex-direction: column;
       gap: 20px;
 
       .image {
+        background-size: 100% 100%;
         width: 100%;
         height: 250px;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
       }
 
-      p {
-        font-family: "Inter", sans-serif;
-        font-style: normal;
-        font-size: 16px;
-        color: #091e42;
-      }
-
-      .last-buttons {
-        position: absolute;
-        bottom: 60px;
+      .last-sect {
         display: flex;
-        gap: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+
+        p {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-size: 16px;
+          color: #091e42;
+        }
+  
+        .last-buttons {
+          display: flex;
+          gap: 20px;
+        }
       }
     }
   }
@@ -535,4 +533,118 @@ footer {
 
 .hide {
   display: none;
+}
+
+@media only screen and (min-width: 786px) {
+
+  header {
+
+    menu {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+      }
+
+      span {
+        font-size: 25px;
+      }
+    }
+
+    .material-symbols-outlined {
+      display: none;
+    }
+  }
+
+  .welcome_page {
+    flex-direction: row;
+    gap: 60px;
+    padding: 13% 6%;
+    color: white;
+    background-image: url(images/Desktop\ Background.png);
+
+    div {
+      order: 1;
+      width: 50%;
+
+      h1 {
+        font-size: 72px;
+        line-height: 82px;
+      }
+
+      h2 {
+        font-size: 32px;
+        line-height: 44px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+
+    ul {
+      padding: 0;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+    }
+  }
+
+  .work-pages {
+    main {
+      .work-item1 {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .work-item2 {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: calc(55% - 15px) calc(45% - 15px);
+        height: 25rem;
+        column-gap: 30px;
+
+        .picture {
+          height: 100%;
+        }
+      }
+    }
+
+    .profession {
+      display: grid;
+      grid-template-columns: calc(33.3% - 10px) calc(33.3% - 10px) calc(33.3% - 10px);
+      gap: 25px 15px;
+
+      li {
+      }
+    }
+  }
+
+  .modal-section {
+    padding: 8% 10%;
+
+    .modal-contents {
+      height: 100%;
+      padding: 30px 20px;
+
+      .title-sect {
+        align-items: center;
+      }
+
+      .second-sect {
+        flex-direction: row;
+
+        .image {
+          width: 60%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
 }

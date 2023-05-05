@@ -1,12 +1,12 @@
 import works from './bundle/projects.js';
-import toggleMenu from './bundle/mobileMenu.js';
+import { openMenu, closeMenu } from './bundle/mobileMenu.js';
 import formCheck from './bundle/formCheck.js';
 import localStore from './bundle/localStorage.js';
 
 const mainProject = {
   name: 'Math-Magicians',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  featuredImage: 'Math-magicians.jpg',
+  featuredImage: 'images/Math-magicians.jpg',
   technologies: ['css', 'html', 'React', 'Ruby'],
   liveVersion: 'https://math-magicians-oowc.onrender.com/calculator',
   source: 'https://github.com/Victor-chiemerie/Victor-chiemerie.github.io',
@@ -47,7 +47,8 @@ mainProject.technologies.forEach((tool) => {
 tools.innerHTML = list;
 
 works();
-toggleMenu();
+openMenu();
+closeMenu();
 formCheck();
 localStore();
 
@@ -66,7 +67,6 @@ mainWorkButton.addEventListener('click', () => {
   </ul>
   <div class="second-sect">
     <div class="image">
-      <img src="images/${mainProject.featuredImage}" alt="Snapshot image">
     </div>
     <div class="last-sect">
       <p>${mainProject.description}</p>
@@ -76,6 +76,9 @@ mainWorkButton.addEventListener('click', () => {
       </div>
     </div>
   </div>`;
+
+  const image = document.querySelector('.image');
+  image.style.backgroundImage = `url("${mainProject.featuredImage}")`;
 
   const closeMainProjects = document.getElementById('close-projects');
   closeMainProjects.addEventListener('click', () => modalPage.classList.add('hide'));

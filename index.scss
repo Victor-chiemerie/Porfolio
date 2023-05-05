@@ -239,13 +239,12 @@ header {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 40%;
-  padding: 0 15px;
+  padding: 0 6%;
 
   div {
     padding-top: 120px;
     padding-bottom: 160px;
     border-bottom: 2px solid grey;
-    text-align: center;
 
     h2 {
       color: $primary-color;
@@ -260,8 +259,7 @@ header {
 
 .technologies {
   background-color: #1c1a19;
-  padding-top: 110px;
-  padding-bottom: 130px;
+  padding: 110px 6% 110px 6%;
   color: white;
 
   .tech {
@@ -332,7 +330,7 @@ header {
 }
 
 .contact-page {
-  padding: 80px 15px;
+  padding: 80px 6%;
   border-bottom: 1px solid rgb(216, 214, 214);
 
   p {
@@ -647,4 +645,78 @@ footer {
     }
   }
 
+  .about-me {
+    background-image: url(images/about-me\ desktop\ background.png);
+  
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      h2 {
+        width: 60%;
+        font-size: 75px;
+        line-height: 82px;
+      }
+
+      p {
+        width: 60%;
+        font-size: 28px;
+        line-height: 35.3px;
+      }
+
+      button {
+        width: fit-content;
+      }
+    }
+  }
+
+  .technologies {
+  
+    .tech {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0 6% 0 6%;
+
+      li {
+
+        ul {
+          text-align: start;
+        }
+      }
+    }
+  }
+
+  .contact-page {
+    display: flex;
+    gap: 25px;
+  
+    p {
+      width: 40%;
+      font-size: 40px;
+      line-height: 52px;
+      text-align: start;
+    }
+  
+    form {
+      margin-top: 0px;
+      flex: 1;
+  
+      ul {
+        align-items: start;
+  
+        li {
+  
+          input {
+            font-size: 18px;
+          }
+  
+          textarea {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -40,6 +40,8 @@ header {
   font-size: 30px;
   font-weight: 600;
   padding: 2% 6%;
+  position: fixed;
+  width: 100%;
 
   menu {
     display: none;
@@ -54,7 +56,7 @@ header {
 
 .welcome_page {
   background-color: $black-bg;
-  padding: 25% 6%;
+  padding: 32% 6% 25% 6%;
   color: white;
   background-image: url(images/welcome_image.png);
   background-repeat: no-repeat;
@@ -108,8 +110,7 @@ header {
 .work-pages {
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
-  padding-bottom: 100px;
+  padding: 120px 10% 100px 10%;
 
   main {
     .work-item1 {
@@ -397,45 +398,52 @@ footer {
 
 .mobile-menu {
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 80%;
-  height: 100vh;
-  background-color: #3c2f28;
-  opacity: 0.99;
-  display: flex;
-  flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.99;
+    background: rgba(151, 148, 147, 0.5);
+    backdrop-filter: blur(3px);
 
-  div {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 20px;
+  main {
+    height: 100%;
+    width: 80%;
+    right: 0;
+    position: fixed;
+    background-color: #3c2f28;
 
-    span {
-      font-size: 45px;
-      color: white;
+    div {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+  
+      span {
+        font-size: 45px;
+        color: white;
+      }
     }
-  }
-
-  ul {
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    li {
-      border-bottom: 1px solid #6f6c6b;
-      padding: 0 10px;
-
-      a {
-        font-family: 'Inter', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        color: #fff5e1;
-        text-decoration: none;
-        cursor: pointer;
-        user-select: none;
+  
+    ul {
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      li {
+        border-bottom: 1px solid #6f6c6b;
+        padding: 0 10px;
+  
+        a {
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          color: #fff5e1;
+          text-decoration: none;
+          cursor: pointer;
+          user-select: none;
+        }
       }
     }
   }
@@ -598,6 +606,10 @@ footer {
       .work-item1 {
         flex-direction: row;
         align-items: center;
+
+        h2 {
+          width: 58%;
+        }
       }
 
       .work-item2 {
@@ -615,10 +627,21 @@ footer {
 
     .profession {
       display: grid;
-      grid-template-columns: calc(33.3% - 10px) calc(33.3% - 10px) calc(33.3% - 10px);
-      gap: 25px 15px;
+      grid-template-columns: calc(33.3% - 14px) calc(33.3% - 14px) calc(33.3% - 14px);
+      gap: 30px 21px;
 
       li {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+          padding-top: 120px;
+        }
+
+        p {
+          font-size: 17px;
+        }
       }
     }
   }

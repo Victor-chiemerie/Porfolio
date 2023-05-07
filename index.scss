@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=InaiMathi&family=Poppins&family=Roboto&family=Inter&display=swap');
 
-$primary-color: #ff6b00;
+$primary-color: #F55800;
 $f-family: 'Crete Round', sans-serif;
 $f-style: normal;
 $f-weight: 500;
@@ -28,6 +28,24 @@ li {
   color: #fff;
   letter-spacing: 0.03em;
   border-width: 0;
+
+  &:hover {
+    color: $primary-color;
+    background: #FFF5E1;
+    border: 1px solid $primary-color;
+  }
+
+  &:active {
+    color: #fff;
+    background: #cc4e04;
+    border: none;
+  }
+
+  &:disabled {
+    color: black;
+    background: #F4F1F0;
+    border: none;
+  }
 }
 
 header {
@@ -42,6 +60,11 @@ header {
   padding: 2% 6%;
   position: fixed;
   width: 100%;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   menu {
     display: none;
@@ -493,7 +516,7 @@ footer {
         font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 17px;
         color: #091e42;
         padding: 7px 8px;
       }
@@ -551,8 +574,6 @@ footer {
       align-items: center;
 
       a {
-        text-decoration: none;
-        color: white;
         font-size: 25px;
       }
 
@@ -642,6 +663,25 @@ footer {
         p {
           font-size: 17px;
         }
+
+        ul {
+          padding-bottom: 20px;
+        }
+
+        .buttons {
+          display: none;
+        }
+
+        &:hover {
+
+          h2, p, ul {
+            display: none;
+          }
+
+          .buttons {
+            display: block;
+          }
+        }
       }
     }
   }
@@ -663,6 +703,14 @@ footer {
         .image {
           width: 60%;
           height: 100%;
+        }
+
+        .last-sect {
+
+          p {
+            font-size: 19px;
+            line-height: 30px;
+          }
         }
       }
     }

@@ -10,7 +10,7 @@ li {
 }
 
 .buttons {
-  background: #ff6b00;
+  background: #F55800;
   padding: 12px;
   gap: 10px;
   font-family: "Inter", sans-serif;
@@ -20,6 +20,21 @@ li {
   color: #fff;
   letter-spacing: 0.03em;
   border-width: 0;
+}
+.buttons:hover {
+  color: #F55800;
+  background: #FFF5E1;
+  border: 1px solid #F55800;
+}
+.buttons:active {
+  color: #fff;
+  background: #cc4e04;
+  border: none;
+}
+.buttons:disabled {
+  color: black;
+  background: #F4F1F0;
+  border: none;
 }
 
 header {
@@ -34,6 +49,10 @@ header {
   padding: 2% 6%;
   position: fixed;
   width: 100%;
+}
+header a {
+  color: white;
+  text-decoration: none;
 }
 header menu {
   display: none;
@@ -61,7 +80,7 @@ header span {
   gap: 10px;
 }
 .welcome_page div h1 {
-  color: #ff6b00;
+  color: #F55800;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -212,7 +231,7 @@ header span {
   border-bottom: 2px solid grey;
 }
 .about-me div h2 {
-  color: #ff6b00;
+  color: #F55800;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -432,7 +451,7 @@ footer ul span {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
   color: #091e42;
   padding: 7px 8px;
 }
@@ -479,8 +498,6 @@ footer ul span {
     align-items: center;
   }
   header menu a {
-    text-decoration: none;
-    color: white;
     font-size: 25px;
   }
   header menu span {
@@ -552,6 +569,18 @@ footer ul span {
   .work-pages .profession li p {
     font-size: 17px;
   }
+  .work-pages .profession li ul {
+    padding-bottom: 20px;
+  }
+  .work-pages .profession li .buttons {
+    display: none;
+  }
+  .work-pages .profession li:hover h2, .work-pages .profession li:hover p, .work-pages .profession li:hover ul {
+    display: none;
+  }
+  .work-pages .profession li:hover .buttons {
+    display: block;
+  }
   .modal-section {
     padding: 8% 10%;
   }
@@ -568,6 +597,10 @@ footer ul span {
   .modal-section .modal-contents .second-sect .image {
     width: 60%;
     height: 100%;
+  }
+  .modal-section .modal-contents .second-sect .last-sect p {
+    font-size: 19px;
+    line-height: 30px;
   }
   .about-me {
     background-image: url(images/about-me\ desktop\ background.png);

@@ -4,11 +4,11 @@ const mobileMenu = document.getElementById('mobile-menu');
 const menuLinks = document.querySelectorAll('#mobile-menu li');
 
 export const closeMenu = () => {
-  mobileMenu.classList.add('hidden');
+  mobileMenu.classList.add('hide');
 };
 
 export const openMenu = () => {
-  mobileMenu.classList.remove('hidden');
+  mobileMenu.classList.remove('hide');
 };
 
 hamburger.addEventListener('click', openMenu);

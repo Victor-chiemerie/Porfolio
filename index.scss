@@ -260,7 +260,7 @@ header {
 }
 
 .about-me {
-  background-color: #1c1a19;
+  background-color: $black-bg;
   color: white;
   background-image: url(images/background\ image\ 2.png);
   background-repeat: no-repeat;
@@ -285,7 +285,7 @@ header {
 }
 
 .technologies {
-  background-color: #1c1a19;
+  background-color: $black-bg;
   padding: 110px 6% 110px 6%;
   color: white;
 
@@ -497,8 +497,8 @@ footer {
       justify-content: space-between;
 
       h2 {
-        font-family: 'Crete Round', sans-serif;
-        font-style: normal;
+        font-family: $f-family;
+        font-style: $f-style;
         font-weight: 400;
         font-size: 32px;
         color: #091e42;
@@ -557,10 +557,6 @@ footer {
       }
     }
   }
-}
-
-.hidden {
-  display: none;
 }
 
 .hide {

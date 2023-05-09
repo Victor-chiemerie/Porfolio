@@ -15,7 +15,6 @@ const mainProject = {
 const workPages = document.getElementById('work-pages');
 
 const mainWork = document.createElement('main');
-mainWork.classList.add('first-page');
 mainWork.innerHTML = `
     <div class="work-item1">
       <h2>My Recent Works</h2>
@@ -62,12 +61,9 @@ mainWorkButton.addEventListener('click', () => {
     <h2>${mainProject.name}</h2>
     <span class="bi-x" id="close-projects"></span>
   </div>
-  <ul class="modal-list-tag">
-    ${list}
-  </ul>
+  <ul>${list}</ul>
   <div class="second-sect">
-    <div class="image">
-    </div>
+    <div class="image"></div>
     <div class="last-sect">
       <p>${mainProject.description}</p>
       <div class="last-buttons">

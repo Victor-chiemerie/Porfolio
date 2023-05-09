@@ -63,7 +63,6 @@ const workPages = document.getElementById('work-pages');
 const works = () => {
   projects.forEach((project) => {
     const list = document.createElement('li');
-    list.classList.add(`profession${project.id}`);
     list.innerHTML = `
       <div>
         <h2>${project.name}</h2>
@@ -102,12 +101,9 @@ const works = () => {
         <h2>${project.name}</h2>
         <span class="bi-x" id="close-projects"></span>
       </div>
-      <ul class="modal-list-tag">
-        ${tech}
-      </ul>
+      <ul>${tech}</ul>
       <div class="second-sect">
-        <div class="image">
-        </div>
+        <div class="image"></div>
         <div class="last-sect">
           <p>${project.description}</p>
           <div class="last-buttons">

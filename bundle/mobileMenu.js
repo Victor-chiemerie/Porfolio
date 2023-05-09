@@ -1,17 +1,19 @@
 const hamburger = document.getElementById('hamburger');
-const closeMenu = document.getElementById('closeMenu');
+const closeMenuBtn = document.getElementById('closeMenu');
 const mobileMenu = document.getElementById('mobile-menu');
 const menuLinks = document.querySelectorAll('#mobile-menu li');
 
-const toggleMenu = () => {
-  mobileMenu.classList.toggle('hidden');
+export const closeMenu = () => {
+  mobileMenu.classList.add('hide');
 };
 
-hamburger.addEventListener('click', toggleMenu);
-closeMenu.addEventListener('click', toggleMenu);
+export const openMenu = () => {
+  mobileMenu.classList.remove('hide');
+};
+
+hamburger.addEventListener('click', openMenu);
+closeMenuBtn.addEventListener('click', closeMenu);
 
 menuLinks.forEach((link) => {
-  link.addEventListener('click', toggleMenu);
+  link.addEventListener('click', closeMenu);
 });
-
-export default toggleMenu;

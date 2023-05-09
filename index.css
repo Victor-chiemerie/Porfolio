@@ -11,7 +11,7 @@ li {
 }
 
 .buttons {
-  background: #ff6b00;
+  background: #f55800;
   padding: 12px;
   gap: 10px;
   font-family: "Inter", sans-serif;
@@ -23,6 +23,24 @@ li {
   border-width: 0;
 }
 
+.buttons:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.buttons:active {
+  color: #fff;
+  background: #cc4e04;
+  border: none;
+}
+
+.buttons:disabled {
+  color: black;
+  background: #f4f1f0;
+  border: none;
+}
+
 header {
   background: #504f4e;
   display: flex;
@@ -32,6 +50,14 @@ header {
   color: white;
   font-size: 30px;
   font-weight: 600;
+  padding: 2% 6%;
+  position: fixed;
+  width: 100%;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
 }
 
 header menu {
@@ -46,13 +72,14 @@ header span {
 
 .welcome_page {
   background-color: #1c1a19;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding: 32% 6% 25% 6%;
   color: white;
   background-image: url(images/welcome_image.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .welcome_page div {
@@ -62,12 +89,16 @@ header span {
 }
 
 .welcome_page div h1 {
-  color: #ff6b00;
+  color: #f55800;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 65px;
+}
+
+.welcome_page div h1 strong {
+  color: #2555a9;
 }
 
 .welcome_page div h2 {
@@ -119,49 +150,25 @@ footer ul span {
   color: white;
 }
 
-.modal-section {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  background: rgba(151, 148, 147, 0.5);
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-  padding: 35px 15px;
-}
-
-.modal-section .modal-contents {
-  background-color: #fff;
-  padding: 25px 15px;
-  height: calc(100vh - 70px);
+.work-pages {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  padding: 120px 10% 100px 10%;
 }
 
-.modal-section .modal-contents .title-sect {
+.work-pages main .work-item1 {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .about-me div h2 {
-  color: #ff6b00;
+  color: #f55800;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 65px;
-}
-
-.work-pages .profession li h2 {
-  position: relative;
-  font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  color: #fff;
-  padding: 15px;
-  padding-top: 70px;
 }
 
 .work-pages main .work-item1 h2 {
@@ -170,26 +177,72 @@ footer ul span {
   font-weight: 500;
   font-size: 48px;
   text-align: center;
+  width: -webkit-fill-available;
 }
 
-.modal-section .modal-contents .title-sect h2 {
+.about-me div {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  border-bottom: 2px solid grey;
+}
+
+.mobile-menu main div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.work-pages main .work-item1 div {
+  width: 100%;
+  border: 0.1px solid rgb(174, 172, 172);
+}
+
+.work-pages main .work-item2 {
+  padding-top: 70px;
+}
+
+.work-pages main .work-item2 .picture {
+  background-image: url(images/Math-magicians.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 16.5rem;
+}
+
+.work-pages main .work-item2 .multi-stories h3 {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 32px;
   color: #091e42;
 }
 
-.mobile-menu div span {
-  font-size: 45px;
+.work-pages .profession li p {
+  padding: 0 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
   color: white;
 }
 
-.modal-section .modal-contents .title-sect span {
-  font-size: 35px;
+.technologies .tech li div p {
+  width: 164px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
-.mobile-menu ul {
+.work-pages main .work-item2 .multi-stories p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #091e42;
+}
+
+.mobile-menu main ul {
   padding: 0 15px;
   display: flex;
   flex-direction: column;
@@ -211,149 +264,6 @@ footer ul span {
   gap: 15px;
 }
 
-.mobile-menu ul li {
-  border-bottom: 1px solid #6f6c6b;
-  padding: 0 10px;
-}
-
-.contact-page form ul li {
-  width: 100%;
-}
-
-.technologies .tech li {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.work-pages .profession li {
-  position: relative;
-}
-
-.modal-section .modal-contents ul li {
-  border: 1px solid #8993a4;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  color: #091e42;
-  padding: 7px 8px;
-}
-
-.modal-section .modal-contents .second-sect {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.modal-section .modal-contents .second-sect .image {
-  width: 100%;
-  height: 250px;
-}
-
-.work-pages .profession li img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0.89;
-}
-
-.modal-section .modal-contents .second-sect .image img {
-  width: 100%;
-  height: 100%;
-}
-
-.work-pages .profession li p {
-  position: relative;
-  padding: 0 15px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  color: white;
-}
-
-.technologies .tech li div p {
-  width: 164px;
-  height: 24px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-
-.modal-section .modal-contents .second-sect p {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  color: #091e42;
-}
-
-.modal-section .modal-contents .second-sect .last-buttons {
-  position: absolute;
-  bottom: 60px;
-  display: flex;
-  gap: 20px;
-}
-
-.work-pages {
-  display: flex;
-  flex-direction: column;
-  padding-top: 120px;
-  padding-bottom: 100px;
-}
-
-.work-pages main .work-item1 {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.mobile-menu div {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 20px;
-}
-
-.about-me div {
-  padding-top: 120px;
-  padding-bottom: 160px;
-  border-bottom: 2px solid grey;
-  text-align: center;
-}
-
-.work-pages main .work-item1 div {
-  width: 100%;
-  border: 0.1px solid rgb(174, 172, 172);
-}
-
-.work-pages main .work-item2 {
-  padding-top: 70px;
-}
-
-.work-pages main .work-item2 .picture {
-  background-image: url(images/Math-magicians.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 16.5rem;
-}
-
-.work-pages main .work-item2 .multi-stories h3 {
-  font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  color: #091e42;
-}
-
-.work-pages main .work-item2 .multi-stories p {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  color: #091e42;
-}
-
 .technologies .tech li ul {
   padding: 0;
   text-align: center;
@@ -373,6 +283,38 @@ footer ul span {
   padding: 0;
   display: flex;
   gap: 20px;
+}
+
+.mobile-menu main ul li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 0 10px;
+}
+
+.contact-page form ul li {
+  width: 100%;
+}
+
+.technologies .tech li {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.work-pages .profession li {
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.modal-section .modal-contents ul li {
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #091e42;
+  padding: 7px 8px;
 }
 
 .technologies .tech li ul li {
@@ -409,14 +351,25 @@ footer ul span {
   margin-top: 20px;
 }
 
+.work-pages .profession li h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  padding: 15px;
+  padding-top: 70px;
+}
+
 .contact-page form ul button {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .work-pages .profession li button {
   width: 100%;
-  position: relative;
   margin-top: 20px;
+  position: relative;
 }
 
 .about-me {
@@ -426,13 +379,12 @@ footer ul span {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 40%;
-  padding: 0 15px;
+  padding: 0 6%;
 }
 
 .technologies {
   background-color: #1c1a19;
-  padding-top: 110px;
-  padding-bottom: 130px;
+  padding: 110px 6% 110px 6%;
   color: white;
 }
 
@@ -471,7 +423,7 @@ footer ul span {
 }
 
 .contact-page {
-  padding: 80px 15px;
+  padding: 80px 6%;
   border-bottom: 1px solid rgb(216, 214, 214);
 }
 
@@ -498,15 +450,28 @@ footer ul span {
   position: fixed;
   top: 0;
   right: 0;
-  width: 80%;
+  width: 100%;
   height: 100vh;
-  background-color: #3c2f28;
   opacity: 0.99;
-  display: flex;
-  flex-direction: column;
+  background: rgba(151, 148, 147, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 
-.mobile-menu ul li a {
+.mobile-menu main {
+  height: 100%;
+  width: 80%;
+  right: 0;
+  position: fixed;
+  background-color: #3c2f28;
+}
+
+.mobile-menu main div span {
+  font-size: 45px;
+  color: white;
+}
+
+.mobile-menu main ul li a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -519,10 +484,289 @@ footer ul span {
   user-select: none;
 }
 
-.hidden {
-  display: none;
+.modal-section {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(151, 148, 147, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  padding: 35px 15px;
+}
+
+.modal-section .modal-contents {
+  background-color: #fff;
+  padding: 25px 15px;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-section .modal-contents .title-sect {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-section .modal-contents .title-sect h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #091e42;
+}
+
+.modal-section .modal-contents .title-sect span {
+  font-size: 35px;
+}
+
+.modal-section .modal-contents .second-sect {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-section .modal-contents .second-sect .image {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 250px;
+}
+
+.modal-section .modal-contents .second-sect .last-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.modal-section .modal-contents .second-sect .last-sect p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #091e42;
+}
+
+.modal-section .modal-contents .second-sect .last-sect .last-buttons {
+  display: flex;
+  gap: 20px;
 }
 
 .hide {
   display: none;
+}
+
+@media only screen and (min-width: 786px) {
+  header menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  header menu a {
+    font-size: 25px;
+  }
+
+  header menu span {
+    font-size: 25px;
+  }
+
+  header .material-symbols-outlined {
+    display: none;
+  }
+
+  .welcome_page {
+    flex-direction: row;
+    gap: 60px;
+    padding: 13% 6%;
+    color: white;
+    background-image: url(images/Desktop\ Background.png);
+  }
+
+  .welcome_page div {
+    order: 1;
+    width: 50%;
+  }
+
+  .welcome_page div h1 {
+    font-size: 82px;
+    line-height: 85px;
+  }
+
+  .welcome_page div h2 {
+    font-size: 42px;
+    line-height: 44px;
+  }
+
+  .contact-page p {
+    width: 40%;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: start;
+  }
+
+  .welcome_page div p {
+    font-size: 28px;
+    line-height: 35.3px;
+  }
+
+  .welcome_page ul {
+    padding: 0;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .work-pages main .work-item1 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-me div h2 {
+    width: 60%;
+    font-size: 75px;
+    line-height: 82px;
+  }
+
+  .work-pages main .work-item1 h2 {
+    width: 58%;
+  }
+
+  .work-pages main .work-item2 {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: calc(55% - 15px) calc(45% - 15px);
+    height: 25rem;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .work-pages main .work-item2 .picture {
+    height: 100%;
+  }
+
+  .about-me div p {
+    width: 60%;
+    font-size: 28px;
+    line-height: 35.3px;
+  }
+
+  .work-pages .profession li p {
+    font-size: 17px;
+  }
+
+  .work-pages main .work-item2 .multi-stories p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .work-pages .profession {
+    display: grid;
+    grid-template-columns: calc(33.3% - 14px) calc(33.3% - 14px) calc(33.3% - 14px);
+    gap: 30px 21px;
+  }
+
+  .work-pages .profession li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .work-pages .profession li h2 {
+    padding-top: 120px;
+  }
+
+  .contact-page form ul {
+    align-items: start;
+  }
+
+  .work-pages .profession li ul {
+    padding-bottom: 20px;
+  }
+
+  .work-pages .profession li .buttons {
+    display: none;
+  }
+
+  .technologies .tech li ul {
+    text-align: start;
+  }
+
+  .work-pages .profession li:hover h2,
+  .work-pages .profession li:hover p,
+  .work-pages .profession li:hover ul {
+    display: none;
+  }
+
+  .work-pages .profession li:hover .buttons {
+    display: block;
+  }
+
+  .modal-section {
+    padding: 8% 10%;
+  }
+
+  .modal-section .modal-contents {
+    height: 100%;
+    padding: 30px 20px;
+  }
+
+  .modal-section .modal-contents .title-sect {
+    align-items: center;
+  }
+
+  .modal-section .modal-contents .second-sect {
+    flex-direction: row;
+  }
+
+  .modal-section .modal-contents .second-sect .image {
+    width: 60%;
+    height: 100%;
+  }
+
+  .modal-section .modal-contents .second-sect .last-sect p {
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .about-me {
+    background-image: url(images/about-me\ desktop\ background.png);
+  }
+
+  .about-me div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-me div button {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .technologies .tech {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 6% 0 6%;
+  }
+
+  .contact-page {
+    display: flex;
+    gap: 25px;
+  }
+
+  .contact-page form {
+    margin-top: 0;
+    flex: 1;
+  }
+
+  .contact-page form ul li input {
+    font-size: 18px;
+  }
+
+  .contact-page form ul li textarea {
+    font-size: 18px;
+  }
 }

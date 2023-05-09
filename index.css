@@ -109,6 +109,16 @@ header span {
   color: #fff5e1;
 }
 
+.contact-page p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
 .welcome_page div p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -117,9 +127,22 @@ header span {
   color: #fff;
 }
 
+footer ul {
+  padding: 0;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
 .welcome_page ul {
   display: flex;
   gap: 20px;
+}
+
+footer ul span {
+  font-size: 25px;
+  color: #505f79;
 }
 
 .welcome_page ul span {
@@ -139,6 +162,15 @@ header span {
   gap: 25px;
 }
 
+.about-me div h2 {
+  color: #f55800;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 65px;
+}
+
 .work-pages main .work-item1 h2 {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
@@ -146,6 +178,18 @@ header span {
   font-size: 48px;
   text-align: center;
   width: -webkit-fill-available;
+}
+
+.about-me div {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  border-bottom: 2px solid grey;
+}
+
+.mobile-menu main div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
 }
 
 .work-pages main .work-item1 div {
@@ -172,6 +216,25 @@ header span {
   color: #091e42;
 }
 
+.work-pages .profession li p {
+  padding: 0 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+}
+
+.technologies .tech li div p {
+  width: 164px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
 .work-pages main .work-item2 .multi-stories p {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -179,10 +242,95 @@ header span {
   color: #091e42;
 }
 
+.mobile-menu main ul {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-page form ul {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-section .modal-contents ul {
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.technologies .tech li ul {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.work-pages .profession li ul {
+  padding: 0;
+  padding: 0 15px;
+  display: flex;
+  gap: 15px;
+}
+
 .work-pages main .work-item2 .multi-stories ul {
   padding: 0;
   display: flex;
   gap: 20px;
+}
+
+.mobile-menu main ul li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 0 10px;
+}
+
+.contact-page form ul li {
+  width: 100%;
+}
+
+.technologies .tech li {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.work-pages .profession li {
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.modal-section .modal-contents ul li {
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #091e42;
+  padding: 7px 8px;
+}
+
+.technologies .tech li ul li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.work-pages .profession li ul li {
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  padding: 8px 10px;
 }
 
 .work-pages main .work-item2 .multi-stories ul li {
@@ -203,13 +351,6 @@ header span {
   margin-top: 20px;
 }
 
-.work-pages .profession li {
-  background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
 .work-pages .profession li h2 {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
@@ -220,28 +361,9 @@ header span {
   padding-top: 70px;
 }
 
-.work-pages .profession li p {
-  padding: 0 15px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  color: white;
-}
-
-.work-pages .profession li ul {
-  padding: 0;
-  padding: 0 15px;
-  display: flex;
-  gap: 15px;
-}
-
-.work-pages .profession li ul li {
-  background: rgba(255, 255, 255, 0.24);
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-size: 15px;
-  color: white;
-  padding: 8px 10px;
+.contact-page form ul button {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .work-pages .profession li button {
@@ -260,21 +382,6 @@ header span {
   padding: 0 6%;
 }
 
-.about-me div {
-  padding-top: 120px;
-  padding-bottom: 160px;
-  border-bottom: 2px solid grey;
-}
-
-.about-me div h2 {
-  color: #f55800;
-  font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 65px;
-}
-
 .technologies {
   background-color: #1c1a19;
   padding: 110px 6% 110px 6%;
@@ -287,12 +394,6 @@ header span {
   align-items: center;
   gap: 40px;
   padding: 0;
-}
-
-.technologies .tech li {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
 }
 
 .technologies .tech li div {
@@ -321,62 +422,13 @@ header span {
   border-radius: 150px;
 }
 
-.technologies .tech li div p {
-  width: 164px;
-  height: 24px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-
-.technologies .tech li ul {
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.technologies .tech li ul li {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-}
-
 .contact-page {
   padding: 80px 6%;
   border-bottom: 1px solid rgb(216, 214, 214);
 }
 
-.contact-page p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
-}
-
 .contact-page form {
   margin-top: 70px;
-}
-
-.contact-page form ul {
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.contact-page form ul li {
-  width: 100%;
 }
 
 .contact-page form ul li input {
@@ -392,24 +444,6 @@ header span {
   padding: 10px;
   border: none;
   background-color: #fbf8f7;
-}
-
-.contact-page form ul button {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-footer ul {
-  padding: 0;
-  padding: 30px 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-footer ul span {
-  font-size: 25px;
-  color: #505f79;
 }
 
 .mobile-menu {
@@ -432,27 +466,9 @@ footer ul span {
   background-color: #3c2f28;
 }
 
-.mobile-menu main div {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 20px;
-}
-
 .mobile-menu main div span {
   font-size: 45px;
   color: white;
-}
-
-.mobile-menu main ul {
-  padding: 0 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.mobile-menu main ul li {
-  border-bottom: 1px solid #6f6c6b;
-  padding: 0 10px;
 }
 
 .mobile-menu main ul li a {
@@ -503,22 +519,6 @@ footer ul span {
 
 .modal-section .modal-contents .title-sect span {
   font-size: 35px;
-}
-
-.modal-section .modal-contents ul {
-  padding: 0;
-  display: flex;
-  gap: 15px;
-}
-
-.modal-section .modal-contents ul li {
-  border: 1px solid #8993a4;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  color: #091e42;
-  padding: 7px 8px;
 }
 
 .modal-section .modal-contents .second-sect {
@@ -599,6 +599,13 @@ footer ul span {
     line-height: 44px;
   }
 
+  .contact-page p {
+    width: 40%;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: start;
+  }
+
   .welcome_page div p {
     font-size: 28px;
     line-height: 35.3px;
@@ -616,6 +623,12 @@ footer ul span {
     align-items: center;
   }
 
+  .about-me div h2 {
+    width: 60%;
+    font-size: 75px;
+    line-height: 82px;
+  }
+
   .work-pages main .work-item1 h2 {
     width: 58%;
   }
@@ -631,6 +644,16 @@ footer ul span {
 
   .work-pages main .work-item2 .picture {
     height: 100%;
+  }
+
+  .about-me div p {
+    width: 60%;
+    font-size: 28px;
+    line-height: 35.3px;
+  }
+
+  .work-pages .profession li p {
+    font-size: 17px;
   }
 
   .work-pages main .work-item2 .multi-stories p {
@@ -654,8 +677,8 @@ footer ul span {
     padding-top: 120px;
   }
 
-  .work-pages .profession li p {
-    font-size: 17px;
+  .contact-page form ul {
+    align-items: start;
   }
 
   .work-pages .profession li ul {
@@ -664,6 +687,10 @@ footer ul span {
 
   .work-pages .profession li .buttons {
     display: none;
+  }
+
+  .technologies .tech li ul {
+    text-align: start;
   }
 
   .work-pages .profession li:hover h2,
@@ -713,18 +740,6 @@ footer ul span {
     gap: 20px;
   }
 
-  .about-me div h2 {
-    width: 60%;
-    font-size: 75px;
-    line-height: 82px;
-  }
-
-  .about-me div p {
-    width: 60%;
-    font-size: 28px;
-    line-height: 35.3px;
-  }
-
   .about-me div button {
     width: -moz-fit-content;
     width: fit-content;
@@ -737,29 +752,14 @@ footer ul span {
     padding: 0 6% 0 6%;
   }
 
-  .technologies .tech li ul {
-    text-align: start;
-  }
-
   .contact-page {
     display: flex;
     gap: 25px;
   }
 
-  .contact-page p {
-    width: 40%;
-    font-size: 40px;
-    line-height: 52px;
-    text-align: start;
-  }
-
   .contact-page form {
     margin-top: 0;
     flex: 1;
-  }
-
-  .contact-page form ul {
-    align-items: start;
   }
 
   .contact-page form ul li input {

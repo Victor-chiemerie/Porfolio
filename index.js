@@ -18,17 +18,17 @@ const mainWork = document.createElement('main');
 mainWork.classList.add('first-page');
 mainWork.innerHTML = `
     <div class="work-item1">
-      <h2 class="title">My Recent Works</h2>
-      <div class="line"></div>
+      <h2>My Recent Works</h2>
+      <div></div>
     </div>
       <div class="work-item2">
         <div class="picture"></div>
         <div class="multi-stories">
-            <h3 class="end-note">${mainProject.name}</h3>
-              <p class="paragragh">
+            <h3>${mainProject.name}</h3>
+              <p>
                 ${mainProject.description}
               </p>
-              <ul class="list-tag">
+              <ul>
               </ul>
               <button id="See-Main-Project" class="buttons">See Project</button>
         </div>
@@ -41,7 +41,7 @@ const tools = document.querySelector('.work-item2 ul');
 let list = '';
 
 mainProject.technologies.forEach((tool) => {
-  list += `<li class="tags">${tool}</li>`;
+  list += `<li>${tool}</li>`;
 });
 
 tools.innerHTML = list;

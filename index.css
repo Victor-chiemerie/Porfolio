@@ -87,6 +87,9 @@ header span {
   font-size: 60px;
   line-height: 65px;
 }
+.welcome_page div h1 strong {
+  color: #2555a9;
+}
 .welcome_page div h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -518,16 +521,16 @@ footer ul span {
     width: 50%;
   }
   .welcome_page div h1 {
-    font-size: 72px;
-    line-height: 82px;
+    font-size: 82px;
+    line-height: 85px;
   }
   .welcome_page div h2 {
-    font-size: 32px;
+    font-size: 42px;
     line-height: 44px;
   }
   .welcome_page div p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 35.3px;
   }
   .welcome_page ul {
     padding: 0;
@@ -552,6 +555,10 @@ footer ul span {
   }
   .work-pages main .work-item2 .picture {
     height: 100%;
+  }
+  .work-pages main .work-item2 .multi-stories p {
+    font-size: 20px;
+    line-height: 28px;
   }
   .work-pages .profession {
     display: grid;

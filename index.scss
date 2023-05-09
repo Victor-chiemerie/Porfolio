@@ -10,7 +10,6 @@ $black-bg: #1c1a19;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // overflow-x: hidden;
 }
 
 li {
@@ -100,6 +99,10 @@ header {
       font-weight: $f-weight;
       font-size: 60px;
       line-height: 65px;
+
+      strong {
+        color: #2555a9;
+      }
     }
 
     h2 {
@@ -599,18 +602,18 @@ footer {
       width: 50%;
 
       h1 {
-        font-size: 72px;
-        line-height: 82px;
+        font-size: 82px;
+        line-height: 85px;
       }
 
       h2 {
-        font-size: 32px;
+        font-size: 42px;
         line-height: 44px;
       }
 
       p {
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 28px;
+        line-height: 35.3px;
       }
     }
 
@@ -642,6 +645,14 @@ footer {
 
         .picture {
           height: 100%;
+        }
+
+        .multi-stories {
+
+          p {
+            font-size: 20px;
+            line-height: 28px;
+          }
         }
       }
     }

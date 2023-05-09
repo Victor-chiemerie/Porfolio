@@ -369,7 +369,6 @@ footer ul span {
 .work-pages .profession li button {
   width: 100%;
   margin-top: 20px;
-  position: relative;
 }
 
 .about-me {
@@ -400,6 +399,7 @@ footer ul span {
   display: flex;
   align-items: center;
   gap: 18px;
+  justify-content: end;
 }
 
 .technologies .tech li div .menu1 {

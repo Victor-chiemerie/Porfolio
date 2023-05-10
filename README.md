@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://victor-chiemerie.github.io/Victor-chiemerie1.github.io/)
+- [Live Demo Link](https://victor-chiemerie.github.io/Victor-chiemerie.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,8 +117,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[I am going to add some transitions and animations to make the website more interactive]**
-- [ ] **[I am going to Add dynamic background change for each project]**
+- [ ] **[I will add some transitions and animations to make the website more interactive]**
+- [ ] **[I will Add dynamic background image change for each project]**
+- [ ] **[I will Resolve glitching effect]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,7 +127,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Victor-chiemerie/Victor-chiemerie1.github.io/issues).
+Feel free to check the [issues page](https://github.com/Victor-chiemerie/Victor-chiemerie.github.io/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

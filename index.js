@@ -5,11 +5,13 @@ import localStore from './bundle/localStorage.js';
 
 const mainProject = {
   name: 'Math-Magicians',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+  description: 'This is a Web Application that is used to perform basic mathematical calculations, calculations can be performed offline after first initial page load.',
+  full_detail: '',
   featuredImage: 'images/Math-magicians.jpg',
-  technologies: ['css', 'html', 'React', 'Ruby'],
+  Original_image: '',
+  technologies: ['React', 'Webpack', 'Es6 Syntax'],
   liveVersion: 'https://math-magicians-oowc.onrender.com/calculator',
-  source: 'https://github.com/Victor-chiemerie/Victor-chiemerie.github.io',
+  source: 'https://github.com/Victor-chiemerie/math-magicians',
 };
 
 const workPages = document.getElementById('work-pages');

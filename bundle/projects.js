@@ -10,12 +10,12 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'images/profession2 background.png',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
-    liveVersion: 'https://victor-chiemerie.github.io/',
-    source: 'https://github.com/Victor-chiemerie/Victor-chiemerie.github.io',
+    name: 'Math-Magicians',
+    description: 'This is a Web Application that is used to perform basic mathematical calculations, calculations can be performed offline after first initial page load.',
+    featuredImage: 'images/Math-magicians.jpg',
+    technologies: ['React', 'Webpack', 'Es6 Syntax'],
+    liveVersion: 'https://math-magicians-oowc.onrender.com/calculator',
+    source: 'https://github.com/Victor-chiemerie/math-magicians',
   },
   {
     id: 3,

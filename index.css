@@ -222,6 +222,10 @@ footer ul span {
   font-style: normal;
   font-size: 16px;
   color: white;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .technologies .tech li div p {
@@ -240,6 +244,10 @@ footer ul span {
   font-style: normal;
   font-size: 16px;
   color: #091e42;
+  -webkit-line-clamp: 3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mobile-menu main ul {

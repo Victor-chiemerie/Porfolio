@@ -19,12 +19,12 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Website Portfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'images/profession3 background.png',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
-    liveVersion: 'https://victor-chiemerie.github.io/',
-    source: 'https://github.com/Victor-chiemerie/Victor-chiemerie.github.io',
+    name: 'Global Art Museum',
+    description: 'An online global Art museum that displays the works of talented individuals all around the world, this project also displays the beauty of countries displayed through art.',
+    featuredImage: 'images/NokArt.jpg',
+    technologies: ['React', 'Restful API', 'Bootstrap5'],
+    liveVersion: 'https://global-art.onrender.com/',
+    source: 'https://github.com/Victor-chiemerie/metrics-webapp',
   },
   {
     id: 4,

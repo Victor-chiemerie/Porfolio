@@ -1,12 +1,12 @@
 const projects = [
   {
     id: 1,
-    name: 'Profesional Art Printing Data More',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'images/profession1 background.png',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
-    liveVersion: 'https://victor-chiemerie.github.io/',
-    source: 'https://github.com/Victor-chiemerie/Victor-chiemerie.github.io',
+    name: 'TEGS 2022',
+    description: 'Website built for a Global Summit for Education on Technology',
+    featuredImage: 'images/TEGS.jpg',
+    technologies: ['Javascript', 'Bootstrap5', 'sass'],
+    liveVersion: 'https://victor-chiemerie.github.io/First-Capstone-Project/',
+    source: 'https://github.com/Victor-chiemerie/First-Capstone-Project',
   },
   {
     id: 2,

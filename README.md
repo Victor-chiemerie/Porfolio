@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://victor-chiemerie.github.io/Victor-chiemerie.github.io/)
+- [Live Demo Link](https://victor-chiemerie.github.io/Porfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

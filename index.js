@@ -4,14 +4,13 @@ import formCheck from './bundle/formCheck.js';
 import localStore from './bundle/localStorage.js';
 
 const mainProject = {
-  name: 'Math-Magicians',
-  description: 'This is a Web Application that is used to perform basic mathematical calculations, calculations can be performed offline after first initial page load.',
-  full_detail: '',
-  featuredImage: 'images/Math-magicians.jpg',
+  name: 'NeedLinc',
+  description: 'NeedLinc is a mobile application software that creates a conducive business ecosystem for students to securely carry out business operations ranging from buying and selling to discovery of services needed.',
+  featuredImage: 'images/needlinc.jpg',
   Original_image: '',
-  technologies: ['React', 'Webpack', 'Es6 Syntax'],
-  liveVersion: 'https://math-magicians-oowc.onrender.com/calculator',
-  source: 'https://github.com/Victor-chiemerie/math-magicians',
+  technologies: ['Flutter', 'Dart', 'Firebase'],
+  liveVersion: 'https://play.google.com/store/apps/details?id=com.needlinc.needlinc',
+  source: 'https://needlinc.netlify.app/',
 };
 
 const workPages = document.getElementById('work-pages');
